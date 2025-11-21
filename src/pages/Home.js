@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AnimateNumber from '../components/AnimateNumber';
+import LazyLoad from '../components/LazyLoad';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -99,7 +100,8 @@ const Home = () => {
       </section>
 
       <section className="about-stats">
-        <div className="about-stats-container">
+        <LazyLoad animation="slideUp">
+          <div className="about-stats-container">
           {/* Left Column - Stats */}
           <div className="stats-column">
             <div className="stat-item">
@@ -144,11 +146,13 @@ const Home = () => {
             </div>
           </div>
         </div>
+        </LazyLoad>
       </section>
 
       <section className="services-preview">
-        <h2>DỊCH VỤ CHÚNG TÔI CUNG CẤP</h2>
-        <div className="services-carousel">
+        <LazyLoad animation="slideUp" delay={100}>
+          <h2>DỊCH VỤ CHÚNG TÔI CUNG CẤP</h2>
+          <div className="services-carousel">
           <div className="service-item">
             <div className="service-image">
               <img src="https://via.placeholder.com/400x300/cccccc/999999?text=Tháo+Dỡ" alt="Tháo Dỡ" />
@@ -229,11 +233,13 @@ const Home = () => {
             </div>
           </div>
         </div>
+        </LazyLoad>
       </section>
 
       <section className="why-us">
-        <h2>Tại Sao Chọn Phú Tân?</h2>
-        <div className="features">
+        <LazyLoad animation="fadeIn" delay={200}>
+          <h2>Tại Sao Chọn Phú Tân?</h2>
+          <div className="features">
           <div className="feature">
             <div className="feature-icon">💰</div>
             <h4>Báo Giá Đúng</h4>
@@ -260,6 +266,7 @@ const Home = () => {
             <p>Tái sử dụng các vật tư phế liệu, áp dụng quy trình thân thiện với môi trường.</p>
           </div>
         </div>
+        </LazyLoad>
       </section>
     </div>
   );
