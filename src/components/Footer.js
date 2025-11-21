@@ -10,25 +10,25 @@ const Footer = () => {
           <h3>Liên Hệ Nhanh</h3>
           <div className="footer-contact">
             <p>
-              <strong>Địa chỉ:</strong> 22/4 Đường Lâm Văn Bền, KP4, Phường Tân Quy, Quận 7, TP HCM
+              <strong>Địa chỉ:</strong>
             </p>
             <p>
-              <strong>Hotline công ty:</strong> 0933 358 717 – 0909 583 236
+              <strong>Hotline công ty:</strong>
             </p>
             <p>
-              <strong>Hotline Zalo:</strong> 0938 251 396
+              <strong>Hotline Zalo:</strong>
             </p>
             <p>
-              <strong>Mã số thuế:</strong> 0316093402
+              <strong>Mã số thuế:</strong>
             </p>
             <p>
-              <strong>Tài khoản:</strong> 037 1000 521 890 Tại Ngân hàng – TMCP Ngoại Thương VN CN Tân Định
+              <strong>Tài khoản:</strong>
             </p>
             <p>
-              <strong>Người đại diện:</strong> Bà NGUYỄN THỊ THỦY TRANG
+              <strong>Người đại diện:</strong>
             </p>
             <p>
-              <strong>Chức vụ:</strong> Giám đốc
+              <strong>Chức vụ:</strong>
             </p>
           </div>
         </div>

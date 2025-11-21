@@ -22,6 +22,10 @@ body {
   padding: 40px 20px;
 }
 
+.main-content.home-page {
+  padding: 0;
+}
+
 .loading-spinner {
   display: flex;
   justify-content: center;

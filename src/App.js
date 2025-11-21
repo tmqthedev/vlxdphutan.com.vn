@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
@@ -29,38 +29,49 @@ const LoadingSpinner = () => (
   </div>
 );
 
+function AppContent() {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
+  return (
+    <>
+      <Header />
+      <main className={`main-content ${isHome ? 'home-page' : ''}`}>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            {/* Main routes */}
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/contact" element={<Contact />} />
+
+            {/* Services routes */}
+            <Route path="/services/demolition" element={<Demolition />} />
+            <Route path="/services/purchase" element={<Purchase />} />
+            <Route path="/services/moving" element={<Moving />} />
+            <Route path="/services/furniture" element={<Furniture />} />
+            <Route path="/services/installation" element={<Installation />} />
+
+            {/* About routes */}
+            <Route path="/about/us" element={<AboutUs />} />
+            <Route path="/about/faq" element={<FAQ />} />
+            <Route path="/about/recruitment" element={<Recruitment />} />
+
+            {/* 404 - Not found */}
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
-        <main className="main-content">
-          <Suspense fallback={<LoadingSpinner />}>
-            <Routes>
-              {/* Main routes */}
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/news" element={<News />} />
-              <Route path="/contact" element={<Contact />} />
-
-              {/* Services routes */}
-              <Route path="/services/demolition" element={<Demolition />} />
-              <Route path="/services/purchase" element={<Purchase />} />
-              <Route path="/services/moving" element={<Moving />} />
-              <Route path="/services/furniture" element={<Furniture />} />
-              <Route path="/services/installation" element={<Installation />} />
-
-              {/* About routes */}
-              <Route path="/about/us" element={<AboutUs />} />
-              <Route path="/about/faq" element={<FAQ />} />
-              <Route path="/about/recruitment" element={<Recruitment />} />
-
-              {/* 404 - Not found */}
-              <Route path="*" element={<Home />} />
-            </Routes>
-          </Suspense>
-        </main>
-        <Footer />
+        <AppContent />
       </div>
     </Router>
   );
