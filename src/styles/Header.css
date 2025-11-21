@@ -1,0 +1,268 @@
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.logo p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 2px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-list li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav a, .nav-link-dropdown {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0;
+  white-space: nowrap;
+  position: relative;
+  transition: color 0.3s;
+  line-height: 1;
+}
+
+.nav a::after, .nav-link-dropdown::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6b6b;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover, .nav-link-dropdown:hover {
+  color: #ff6b6b;
+}
+
+.nav a:hover::after, .nav-link-dropdown:hover::after {
+  width: 100%;
+}
+
+.nav-item-dropdown {
+  position: relative;
+}
+
+.nav-link-dropdown {
+  padding: 0;
+  border: none;
+  transition: color 0.3s;
+}
+
+.nav-link-dropdown:hover {
+  border: none;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0f0f1e;
+  list-style: none;
+  min-width: 250px;
+  padding: 10px 0;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.submenu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.submenu li {
+  padding: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.submenu a:hover {
+  background-color: #1a1a2e;
+  color: #ff6b6b;
+  padding-left: 25px;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #1a1a2e;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav.active {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav a {
+    display: block;
+    padding: 10px;
+  }
+
+  .nav-item-dropdown {
+    width: 100%;
+  }
+
+  .nav-link-dropdown {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  .submenu {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transform: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+  }
+
+  .submenu.active {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px;
+    padding: 10px 0;
+    background-color: #0f0f1e;
+  }
+
+  .submenu li {
+    padding: 0;
+  }
+
+  .submenu a {
+    padding: 10px 40px;
+  }
+}
+
+/* Desktop hover for submenu */
+@media (min-width: 769px) {
+  .nav-item-dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

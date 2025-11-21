@@ -1,0 +1,263 @@
+.about-us,
+.faq,
+.recruitment {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1,
+.faq h1,
+.recruitment h1 {
+  color: #1a1a2e;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #1e90ff;
+  padding-bottom: 15px;
+}
+
+.about-content,
+.recruitment-intro {
+  color: #666;
+}
+
+.about-content section,
+.recruitment-intro {
+  margin-bottom: 30px;
+}
+
+.about-content h2,
+.recruitment h2 {
+  color: #1e90ff;
+  font-size: 1.5rem;
+  margin: 25px 0 15px;
+}
+
+.about-content h3,
+.recruitment h3 {
+  color: #1a1a2e;
+  font-size: 1.2rem;
+  margin: 15px 0 10px;
+}
+
+.about-content p,
+.recruitment-intro p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-content ul {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.about-content li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.about-content ul li:before {
+  content: "▸ ";
+  color: #1e90ff;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* FAQ Styles */
+.faq-list {
+  margin-top: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px;
+  background: #f9f9f9;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 1rem;
+  color: #1a1a2e;
+  font-weight: bold;
+}
+
+.faq-question:hover {
+  background: #f0f0f0;
+  padding-left: 25px;
+}
+
+.faq-question .icon {
+  transition: transform 0.3s;
+  font-size: 1.5rem;
+  color: #1e90ff;
+}
+
+.faq-question .icon.active {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 20px;
+  background: white;
+  color: #666;
+  line-height: 1.8;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+/* Recruitment Styles */
+.positions-list {
+  margin-top: 30px;
+}
+
+.position-card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.position-header {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e90ff 0%, #ff6b6b 100%);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.position-header:hover {
+  box-shadow: 0 5px 15px rgba(30, 144, 255, 0.2);
+}
+
+.position-info {
+  text-align: left;
+  color: white;
+}
+
+.position-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.position-info p {
+  margin: 5px 0 0 0;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.position-header .icon {
+  transition: transform 0.3s;
+  color: white;
+  font-size: 1rem;
+}
+
+.position-header .icon.active {
+  transform: rotate(180deg);
+}
+
+.position-details {
+  padding: 20px;
+  background: white;
+  color: #666;
+}
+
+.position-details h4 {
+  color: #1a1a2e;
+  margin: 0 0 15px 0;
+}
+
+.position-details ul {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.position-details li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.apply-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.recruitment-benefits {
+  margin-top: 40px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.recruitment-benefits h2 {
+  color: #1e90ff;
+  margin-top: 0;
+}
+
+.recruitment-benefits ul {
+  margin-left: 30px;
+  color: #666;
+}
+
+.recruitment-benefits li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-us,
+  .faq,
+  .recruitment {
+    padding: 20px;
+  }
+
+  .about-us h1,
+  .faq h1,
+  .recruitment h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-content h2,
+  .recruitment h2 {
+    font-size: 1.2rem;
+  }
+
+  .faq-question,
+  .position-header {
+    padding: 15px;
+  }
+
+  .faq-answer,
+  .position-details {
+    padding: 15px;
+  }
+}
