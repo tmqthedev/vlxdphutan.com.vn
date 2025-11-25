@@ -25,10 +25,10 @@ const Footer = () => {
               <strong>Tài khoản:</strong>
             </p>
             <p>
-              <strong>Người đại diện:</strong>
+              <strong>Người đại diện: Hoàng Minh Phương - CEO</strong>
             </p>
             <p>
-              <strong>Chức vụ:</strong>
+              <strong>Email:</strong>
             </p>
           </div>
         </div>

@@ -141,8 +141,8 @@ const Home = () => {
 
             <div className="ceo-signature">
               <p className="ceo-sign">Trân trọng,</p>
-              <p className="ceo-name">Hoàng Minh Phương</p>
-              <p className="ceo-title">CEO</p>
+              <br></br><br></br><br></br>
+              <p className="ceo-title">CEO<p className="ceo-name"> Hoàng Minh Phương</p></p>
             </div>
           </div>
         </div>
