@@ -23,6 +23,7 @@ const Installation = lazy(() => import('./pages/services/Installation'));
 const AboutUs = lazy(() => import('./pages/about/AboutUs'));
 const FAQPage = lazy(() => import('./pages/about/FAQ'));
 const Recruitment = lazy(() => import('./pages/about/Recruitment'));
+const RecruitmentApply = lazy(() => import('./pages/about/RecruitmentApply'));
 
 // Loading component
 const LoadingSpinner = () => (
@@ -62,6 +63,7 @@ function AppContent() {
             <Route path="/about/us" element={<AboutUs />} />
             <Route path="/about/faq" element={<FAQPage />} />
             <Route path="/about/recruitment" element={<Recruitment />} />
+            <Route path="/recruitment/apply/:positionId" element={<RecruitmentApply />} />
 
             {/* 404 - Not found */}
             <Route path="*" element={<Home />} />

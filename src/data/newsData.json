@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Phú Tân Kỷ Niệm 10 Năm Thành Lập",
+    "slug": "phu-tan-ky-niem-10-nam-thanh-lap",
+    "date": "21/11/2025",
+    "author": "Admin",
+    "category": "Công Ty",
+    "image": "https://via.placeholder.com/400x250?text=News+1",
+    "description": "Phú Tân vinh dự kỷ niệm 10 năm thành lập với những thành tích vượt bậc trong lĩnh vực cung cấp dịch vụ chuyên nghiệp.",
+    "content": "Nội dung chi tiết về kỷ niệm 10 năm thành lập công ty..."
+  },
+  {
+    "id": 2,
+    "title": "Khai Trương Chi Nhánh Mới Tại Hà Nội",
+    "slug": "khai-truong-chi-nhanh-moi-tai-ha-noi",
+    "date": "20/11/2025",
+    "author": "Nguyễn Văn A",
+    "category": "Mở Rộng",
+    "image": "https://via.placeholder.com/400x250?text=News+2",
+    "description": "Phú Tân chính thức khai trương chi nhánh mới tại Hà Nội, mở ra cơ hội phục vụ khách hàng tại khu vực phía Bắc.",
+    "content": "Nội dung chi tiết về khai trương chi nhánh mới..."
+  },
+  {
+    "id": 3,
+    "title": "Dịch Vụ Chuyên Nhà - Giải Pháp Toàn Diện",
+    "slug": "dich-vu-chuyen-nha-giai-phap-toan-dien",
+    "date": "19/11/2025",
+    "author": "Trần Thị B",
+    "category": "Dịch Vụ",
+    "image": "https://via.placeholder.com/400x250?text=News+3",
+    "description": "Chúng tôi giới thiệu dịch vụ chuyên nhà toàn diện với đội ngũ chuyên gia giàu kinh nghiệm.",
+    "content": "Nội dung chi tiết về dịch vụ chuyên nhà..."
+  },
+  {
+    "id": 4,
+    "title": "Tháo Dỡ Nhà Nhanh Chóng và An Toàn",
+    "slug": "thao-do-nha-nhanh-chong-va-an-toan",
+    "date": "18/11/2025",
+    "author": "Lê Văn C",
+    "category": "Dịch Vụ",
+    "image": "https://via.placeholder.com/400x250?text=News+4",
+    "description": "Dịch vụ tháo dỡ nhà của Phú Tân đảm bảo nhanh chóng, an toàn và không gây hư hại tài sản.",
+    "content": "Nội dung chi tiết về dịch vụ tháo dỡ nhà..."
+  },
+  {
+    "id": 5,
+    "title": "Lắp Đặt Kính Cường Lực Chất Lượng Cao",
+    "slug": "lap-dat-kinh-cuong-luc-chat-luong-cao",
+    "date": "17/11/2025",
+    "author": "Phạm Văn D",
+    "category": "Dịch Vụ",
+    "image": "https://via.placeholder.com/400x250?text=News+5",
+    "description": "Phú Tân cung cấp dịch vụ lắp đặt kính cường lực với chất lượng cao và giá cả cạnh tranh.",
+    "content": "Nội dung chi tiết về dịch vụ lắp đặt kính..."
+  },
+  {
+    "id": 6,
+    "title": "Đội Ngũ Chuyên Gia Được Đào Tạo Quốc Tế",
+    "slug": "doi-ngu-chuyen-gia-duoc-dao-tao-quoc-te",
+    "date": "16/11/2025",
+    "author": "Văn Phòng",
+    "category": "Nhân Sự",
+    "image": "https://via.placeholder.com/400x250?text=News+6",
+    "description": "Đội ngũ chuyên gia của Phú Tân được đào tạo theo tiêu chuẩn quốc tế, đảm bảo dịch vụ tốt nhất.",
+    "content": "Nội dung chi tiết về đội ngũ chuyên gia..."
+  },
+  {
+    "id": 7,
+    "title": "Sử Dụng Công Nghệ Tiên Tiến Nhất",
+    "slug": "su-dung-cong-nghe-tien-tien-nhat",
+    "date": "15/11/2025",
+    "author": "Admin",
+    "category": "Công Nghệ",
+    "image": "https://via.placeholder.com/400x250?text=News+7",
+    "description": "Phú Tân áp dụng công nghệ tiên tiến nhất để nâng cao chất lượng dịch vụ và hiệu quả công việc.",
+    "content": "Nội dung chi tiết về công nghệ tiên tiến..."
+  },
+  {
+    "id": 8,
+    "title": "Khách Hàng Hài Lòng Là Ưu Tiên Hàng Đầu",
+    "slug": "khach-hang-hai-long-la-uu-tien-hang-dau",
+    "date": "14/11/2025",
+    "author": "Nguyễn Văn E",
+    "category": "Công Ty",
+    "image": "https://via.placeholder.com/400x250?text=News+8",
+    "description": "Phú Tân luôn đặt sự hài lòng của khách hàng lên hàng đầu trong mọi hoạt động kinh doanh.",
+    "content": "Nội dung chi tiết về tiêu chí khách hàng..."
+  },
+  {
+    "id": 9,
+    "title": "Hỗ Trợ 24/7 Cho Tất Cả Khách Hàng",
+    "slug": "ho-tro-24-7-cho-tat-ca-khach-hang",
+    "date": "13/11/2025",
+    "author": "Trần Thị F",
+    "category": "Dịch Vụ",
+    "image": "https://via.placeholder.com/400x250?text=News+9",
+    "description": "Phú Tân cung cấp dịch vụ hỗ trợ 24/7 để giúp khách hàng giải quyết mọi vấn đề nhanh chóng.",
+    "content": "Nội dung chi tiết về dịch vụ hỗ trợ 24/7..."
+  }
+]

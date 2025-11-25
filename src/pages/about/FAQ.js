@@ -33,28 +33,32 @@ const FAQ = () => {
     : faqData[selectedCategory] || [];
 
   return (
-    <div className="faq">
-      <h1>Câu Hỏi Thường Gặp</h1>
-      
-      {/* Category Filter */}
-      <div className="faq-filter">
-        <div className="faq-categories">
-          {categories.map(cat => (
-            <button
-              key={cat.id}
-              className={`faq-category-btn ${selectedCategory === cat.id ? 'active' : ''}`}
-              onClick={() => setSelectedCategory(cat.id)}
-              type="button"
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
+    <>
+      <div className="page-header">
+        <h1>Câu Hỏi Thường Gặp</h1>
+        <p>Tìm câu trả lời cho những thắc mắc của bạn</p>
       </div>
+      <div className="faq">
+        {/* Category Filter */}
+        <div className="faq-filter">
+          <div className="faq-categories">
+            {categories.map(cat => (
+              <button
+                key={cat.id}
+                className={`faq-category-btn ${selectedCategory === cat.id ? 'active' : ''}`}
+                onClick={() => setSelectedCategory(cat.id)}
+                type="button"
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+        </div>
 
-      {/* FAQ List */}
-      <FAQList faqs={faqs} />
-    </div>
+        {/* FAQ List */}
+        <FAQList faqs={faqs} />
+      </div>
+    </>
   );
 };
 

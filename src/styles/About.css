@@ -1,22 +1,110 @@
+/* Page Header - Full Width */
+.page-header {
+  background: linear-gradient(135deg, #2c5388 0%, #3d6fa8 100%);
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+  border-bottom: 5px solid #ff6b35;
+  width: 100%;
+  margin: 0;
+}
+
+.page-header h1 {
+  margin: 0 0 16px 0;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: white;
+}
+
+.page-header p {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0.95;
+  font-weight: 400;
+  color: white;
+}
+
 .about-us,
 .faq,
 .recruitment {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
   background: white;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.about-us h1,
-.faq h1,
-.recruitment h1 {
-  color: #1a1a2e;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  border-bottom: 3px solid #1e90ff;
-  padding-bottom: 15px;
+/* Professional Headers */
+:root {
+  --primary-color: #1a3a52;
+  --secondary-color: #2c5aa0;
+  --accent-color: #ff6b35;
+  --light-bg: #f8fafb;
+}
+
+.about-header,
+.faq-header {
+  background: linear-gradient(135deg, #2c5388 0%, #3d6fa8 100%);
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: 5px solid #ff6b35;
+}
+
+.about-header h1,
+.faq-header h1 {
+  margin: 0 0 16px 0;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  border: none;
+  padding: 0;
+  color: white;
+}
+
+.about-header p,
+.faq-header p {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0.95;
+  font-weight: 400;
+  color: white;
+}
+
+/* Recruitment Header */
+.recruitment-header-banner {
+  background: linear-gradient(135deg, #2c5388 0%, #3d6fa8 100%);
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: 5px solid #ff6b35;
+}
+
+.recruitment-header-banner h1 {
+  border: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+  font-size: 3.2rem;
+  color: white;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.recruitment-tagline {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .about-content,
@@ -165,79 +253,131 @@
 }
 
 /* Recruitment Styles */
+/* Position Cards Styling */
 .positions-list {
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .position-card {
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
   overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  text-align: left;
+  font-family: inherit;
 }
 
-.position-header {
-  width: 100%;
+.position-card:hover {
+  box-shadow: 0 8px 16px rgba(30, 144, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.position-card:focus-visible {
+  outline: 2px solid #1e90ff;
+  outline-offset: 2px;
+}
+
+.position-card-header {
   padding: 20px;
-  background: linear-gradient(135deg, #1e90ff 0%, #ff6b6b 100%);
-  border: none;
-  cursor: pointer;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f7 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s;
+  gap: 10px;
 }
 
-.position-header:hover {
-  box-shadow: 0 5px 15px rgba(30, 144, 255, 0.2);
-}
-
-.position-info {
-  text-align: left;
+.position-badge {
+  display: inline-block;
+  background: #ff6b6b;
   color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.position-info h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: white;
-}
-
-.position-info p {
-  margin: 5px 0 0 0;
+.position-location {
+  color: #666;
   font-size: 0.9rem;
-  opacity: 0.95;
+  margin-left: auto;
+  text-align: right;
 }
 
-.position-header .icon {
-  transition: transform 0.3s;
-  color: white;
-  font-size: 1rem;
+.position-title {
+  padding: 0 20px;
+  margin: 15px 0 0 0;
+  color: #1a1a2e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-.position-header .icon.active {
-  transform: rotate(180deg);
+.position-salary {
+  padding: 0 20px;
+  margin: 8px 0 0 0;
+  color: #ff6b6b;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-.position-details {
-  padding: 20px;
-  background: white;
+.position-desc {
+  padding: 15px 20px;
+  color: #666;
+  font-size: 0.9rem;
+  flex-grow: 1;
+  border-top: 1px solid #eee;
+}
+
+.position-desc ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.position-desc li {
+  margin-bottom: 8px;
+  line-height: 1.6;
   color: #666;
 }
 
-.position-details h4 {
-  color: #1a1a2e;
-  margin: 0 0 15px 0;
+.position-apply-btn {
+  margin: 15px 20px 20px 20px;
+  padding: 10px 15px;
+  background: transparent;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.position-details ul {
-  margin-left: 30px;
-  margin-bottom: 15px;
+.position-apply-btn:hover {
+  background: #ff6b6b;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  transform: translateY(-2px);
 }
 
-.position-details li {
-  margin-bottom: 8px;
-  line-height: 1.6;
+.position-apply-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 107, 107, 0.2);
 }
 
 .apply-info {
@@ -245,6 +385,228 @@
   padding: 15px;
   border-radius: 5px;
   margin-top: 15px;
+  line-height: 1.8;
+}
+
+/* Recruitment Apply Page Styling */
+.recruitment-apply {
+  padding: 60px 20px;
+  background: #f5f7fa;
+  min-height: calc(100vh - 200px);
+}
+
+.apply-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.apply-left {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.apply-left h2 {
+  color: #1a1a2e;
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.apply-left p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 30px 0;
+}
+
+.hotline-section {
+  border-top: 2px solid #eee;
+  padding-top: 25px;
+  margin-top: 30px;
+}
+
+.hotline-section h4 {
+  color: #1a1a2e;
+  font-size: 0.85rem;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hotline {
+  color: #ff6b6b;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.apply-right {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.apply-container h2 {
+  color: #1a1a2e;
+  font-size: 1.3rem;
+  margin: 0 0 25px 0;
+  font-weight: bold;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row.full {
+  grid-template-columns: 1fr;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.1);
+  background: white;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 25px;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.apply-btn:hover {
+  background: #2d2d44;
+  box-shadow: 0 6px 20px rgba(26, 26, 46, 0.3);
+  transform: translateY(-2px);
+}
+
+.apply-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(26, 26, 46, 0.2);
+}
+
+.apply-success {
+  text-align: center;
+  padding: 60px 20px;
+  color: #28a745;
+}
+
+.apply-success h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.apply-success p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.success-message {
+  text-align: center;
+  padding: 60px 20px;
+  color: #28a745;
+}
+
+.success-message h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #28a745;
+}
+
+.success-message p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.contact-info {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.contact-info h4 {
+  color: #1a1a2e;
+  margin: 0 0 10px 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #666;
   line-height: 1.8;
 }
 
@@ -271,11 +633,64 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .page-header {
+    padding: 80px 40px;
+  }
+
+  .page-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-header,
+  .faq-header,
+  .recruitment-header-banner {
+    padding: 80px 40px;
+  }
+
+  .about-header h1,
+  .faq-header h1,
+  .recruitment-header-banner h1 {
+    font-size: 2.8rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .page-header {
+    padding: 60px 20px;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
   .about-us,
   .faq,
   .recruitment {
-    padding: 20px;
+    padding: 30px 20px;
+    margin: 40px auto;
+  }
+
+  .about-header,
+  .faq-header,
+  .recruitment-header-banner {
+    padding: 60px 20px;
+  }
+
+  .about-header h1,
+  .faq-header h1,
+  .recruitment-header-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-header p,
+  .faq-header p,
+  .recruitment-tagline {
+    font-size: 1rem;
   }
 
   .about-us h1,
@@ -299,12 +714,113 @@
   }
 
   .faq-question,
-  .position-header {
+  .position-card-header {
     padding: 15px;
   }
 
   .faq-answer,
-  .position-details {
+  .position-desc {
     padding: 15px;
+  }
+
+  .positions-list {
+    grid-template-columns: 1fr;
+  }
+
+  .position-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .position-location {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .apply-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .apply-left {
+    padding: 20px;
+  }
+
+  .apply-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .apply-container {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.1);
+    background: white;
+  }
+
+  .apply-btn {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  .hotline {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 50px 15px;
+    border-bottom: 3px solid #ff6b35;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-header p {
+    font-size: 0.9rem;
+  }
+
+  .about-us,
+  .faq,
+  .recruitment {
+    padding: 20px 15px;
+    margin: 30px auto;
+  }
+
+  .about-header,
+  .faq-header,
+  .recruitment-header-banner {
+    padding: 50px 15px;
+    border-bottom: 3px solid #ff6b35;
+  }
+
+  .about-header h1,
+  .faq-header h1,
+  .recruitment-header-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-header p,
+  .faq-header p,
+  .recruitment-tagline {
+    font-size: 0.9rem;
   }
 }

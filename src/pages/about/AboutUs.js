@@ -3,9 +3,12 @@ import '../../styles/About.css';
 
 const AboutUs = () => {
   return (
-    <div className="about-us">
-      <h1>Về Phú Tân</h1>
-      <div className="about-content">
+    <>
+      <div className="page-header">
+        <h1>Về Phú Tân</h1>
+        <p>Tìm hiểu thêm về công ty và hành trình phát triển của chúng tôi</p>
+      </div>
+      <div className="about-us">
         <section>
           <h2>Giới Thiệu Công Ty</h2>
           <p>
@@ -59,7 +62,7 @@ const AboutUs = () => {
           </p>
         </section>
       </div>
-    </div>
+    </>
   );
 };
 
