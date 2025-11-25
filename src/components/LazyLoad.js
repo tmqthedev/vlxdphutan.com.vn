@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import useInView from '../hooks/useInView';
 
 /**
@@ -18,10 +19,13 @@ const LazyLoad = ({
 }) => {
   const { ref, isVisible } = useInView({ threshold });
 
+  const animationClass = isVisible ? `animated ${animation}` : '';
+  const combinedClass = `lazy-load ${className} ${animationClass}`;
+
   return (
     <div
       ref={ref}
-      className={`lazy-load ${className} ${isVisible ? `animated ${animation}` : ''}`}
+      className={combinedClass}
       style={{
         animationDelay: `${delay}ms`,
       }}
@@ -29,6 +33,14 @@ const LazyLoad = ({
       {children}
     </div>
   );
+};
+
+LazyLoad.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  animation: PropTypes.string,
+  delay: PropTypes.number,
+  threshold: PropTypes.number,
 };
 
 export default LazyLoad;

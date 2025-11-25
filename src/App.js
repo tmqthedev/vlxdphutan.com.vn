@@ -2,11 +2,13 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import useScrollToTop from './hooks/useScrollToTop';
 import './App.css';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 const News = lazy(() => import('./pages/News'));
 const Contact = lazy(() => import('./pages/Contact'));
 
@@ -19,7 +21,7 @@ const Installation = lazy(() => import('./pages/services/Installation'));
 
 // Lazy load about pages
 const AboutUs = lazy(() => import('./pages/about/AboutUs'));
-const FAQ = lazy(() => import('./pages/about/FAQ'));
+const FAQPage = lazy(() => import('./pages/about/FAQ'));
 const Recruitment = lazy(() => import('./pages/about/Recruitment'));
 
 // Loading component
@@ -32,6 +34,9 @@ const LoadingSpinner = () => (
 function AppContent() {
   const location = useLocation();
   const isHome = location.pathname === '/';
+  
+  // Scroll to top when route changes
+  useScrollToTop();
 
   return (
     <>
@@ -42,6 +47,7 @@ function AppContent() {
             {/* Main routes */}
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:slug" element={<ProjectDetail />} />
             <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
 
@@ -54,7 +60,7 @@ function AppContent() {
 
             {/* About routes */}
             <Route path="/about/us" element={<AboutUs />} />
-            <Route path="/about/faq" element={<FAQ />} />
+            <Route path="/about/faq" element={<FAQPage />} />
             <Route path="/about/recruitment" element={<Recruitment />} />
 
             {/* 404 - Not found */}

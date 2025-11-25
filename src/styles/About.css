@@ -68,6 +68,44 @@
 }
 
 /* FAQ Styles */
+.faq-filter {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.faq-category-btn {
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  transition: all 0.3s ease;
+}
+
+.faq-category-btn:hover {
+  border-color: #1e90ff;
+  color: #1e90ff;
+  transform: translateY(-2px);
+}
+
+.faq-category-btn.active {
+  background: #1e90ff;
+  border-color: #1e90ff;
+  color: white;
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
 .faq-list {
   margin-top: 30px;
 }
@@ -249,6 +287,15 @@
   .about-content h2,
   .recruitment h2 {
     font-size: 1.2rem;
+  }
+
+  .faq-categories {
+    gap: 8px;
+  }
+
+  .faq-category-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 
   .faq-question,

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "slug": "thao-do-chuyen-van-phong-cong-ty-a",
+    "title": "Tháo Dỡ Và Chuyển Văn Phòng Công Ty A",
+    "category": "Tháo dỡ hoàn trả mặt bằng",
+    "type": "Văn phòng",
+    "description": "Dự án tháo dỡ toàn bộ thiết bị văn phòng và chuyển đến địa điểm mới với chi phí tối ưu. Chúng tôi thực hiện việc tháo dỡ tất cả các thiết bị, nội thất văn phòng cũ, xử lý chất thải theo đúng quy định môi trường, và vận chuyển an toàn đến địa điểm mới. Đội ngũ chuyên nghiệp của chúng tôi đảm bảo không gián đoạn hoạt động kinh doanh của công ty trong quá trình chuyển di.",
+    "image": "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=570&h=570&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "mua-ban-noi-that-cho-khach-san-b",
+    "title": "Mua Bán Nội Thất Cho Khách Sạn B",
+    "category": "Mua bán nội thất, kính cường lực",
+    "type": "Khách sạn",
+    "description": "Cung cấp bộ nội thất cao cấp và thi công lắp đặt cho khách sạn 4 sao. Dự án này bao gồm thiết kế và cung cấp toàn bộ nội thất phòng khách, phòng ăn, quầy tiếp tân, phòng hội họp với chất lượng cao cấp. Chúng tôi làm việc với các nhà cung cấp uy tín toàn thế giới để đảm bảo tính thẩm mỹ và bền vững của sản phẩm.",
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=570&h=570&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "thi-cong-lap-dat-kinh-cuong-luc-toa-nha-c",
+    "title": "Thi Công Lắp Đặt Kính Cường Lực Tòa Nhà C",
+    "category": "Thi công lắp đặt kính cường lực",
+    "type": "Cao ốc văn phòng",
+    "description": "Thi công kính cường lực toàn bộ vách ngăn, cửa và ban công tòa nhà văn phòng. Dự án này yêu cầu các kỹ sư chuyên môn cao do tòa nhà cao 35 tầng. Chúng tôi sử dụng kính cường lực loại A, đảm bảo an toàn, cách âm và cách nhiệt tối ưu cho các văn phòng.",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=570&h=570&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1554995207-c18231b6ce48?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=600&fit=crop"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "thu-mua-phe-lieu-kho-bai-d",
+    "title": "Thu Mua Phế Liệu Kho Bãi D",
+    "category": "Thu mua phế liệu, vật tư kho bãi",
+    "type": "Kho bãi công nghiệp",
+    "description": "Thu mua toàn bộ phế liệu, kim loại vụn từ kho bãi cũ với giá tốt nhất. Chúng tôi cung cấp dịch vụ thu mua phế liệu toàn diện, bao gồm tháo dỡ, phân loại, xử lý môi trường. Với mạng lưới thu mua rộng khắp, chúng tôi cam kết giá cả cạnh tranh nhất trên thị trường.",
+    "image": "https://images.unsplash.com/photo-1604307176684-a65da8c42d89?w=570&h=570&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1604307176684-a65da8c42d89?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1541123603104-852e6d1bfe75?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581092915550-4b8f32ccc1ed?w=800&h=600&fit=crop"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "chuyen-nha-toan-quoc-cho-gia-dinh-e",
+    "title": "Chuyên Nhà Toàn Quốc Cho Gia Đình E",
+    "category": "Chuyên nhà, chuyên văn phòng",
+    "type": "Nhà ở",
+    "description": "Chuyên nhà trọn gói với dịch vụ đóng gói, vận chuyển an toàn và lắp ráp nội thất. Dự án chuyển nhà cho gia đình trên toàn quốc với khoảng cách lên đến 2000km. Chúng tôi cung cấp dịch vụ bao gồm: đóng gói đồ đạc, vận chuyển bằng xe chuyên dụng, lắp ráp lại nội thất tại địa điểm mới.",
+    "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=570&h=570&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "thao-do-toa-nha-saigon-finance-center",
+    "title": "Tháo Dỡ Tòa Nhà Saigon Finance Center",
+    "category": "Tháo dỡ hoàn trả mặt bằng",
+    "type": "Cao ốc",
+    "description": "Tháo dỡ công trình 20 tầng với 150 công nhân, hoàn thành trong 3 tháng. Đây là một trong những dự án tháo dỡ quy mô lớn nhất do Phú Tân Construction thực hiện. Chúng tôi sử dụng công nghệ tháo dỡ hiện đại, đảm bảo an toàn cho công nhân và cộng đồng xung quanh, đồng thời tối đa hóa tái chế vật liệu.",
+    "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=570&h=570&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1589829085413-56de8ca0a550?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1541123603104-852e6d1bfe75?w=800&h=600&fit=crop"
+    ]
+  }
+]

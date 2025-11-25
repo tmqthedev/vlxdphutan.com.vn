@@ -1,0 +1,152 @@
+{
+  "general": [
+    {
+      "id": 1,
+      "question": "Phú Tân có phục vụ ngoài TP HCM không?",
+      "answer": "Có, chúng tôi có thể phục vụ các khu vực lân cận TP HCM. Vui lòng liên hệ để tư vấn chi tiết.",
+      "category": "general"
+    },
+    {
+      "id": 2,
+      "question": "Chi phí dịch vụ được tính như thế nào?",
+      "answer": "Chi phí được tính dựa trên khối lượng công việc, khoảng cách vận chuyển và loại dịch vụ. Chúng tôi sẽ cung cấp báo giá chi tiết sau khi kiểm tra.",
+      "category": "general"
+    },
+    {
+      "id": 3,
+      "question": "Bảo hành sản phẩm như thế nào?",
+      "answer": "Tất cả sản phẩm nội thất và kính cường lực được bảo hành tối thiểu 1 năm. Thi công kính được bảo hành 3 năm.",
+      "category": "general"
+    },
+    {
+      "id": 4,
+      "question": "Có thể chuyên nhà ngoài giờ hành chính không?",
+      "answer": "Có, chúng tôi có thể sắp xếp chuyên nhà vào buổi tối hoặc cuối tuần. Sẽ có chi phí phụ thêm.",
+      "category": "general"
+    },
+    {
+      "id": 5,
+      "question": "Làm thế nào để thanh toán?",
+      "answer": "Chúng tôi chấp nhận thanh toán tiền mặt, chuyển khoản ngân hàng. Thanh toán được tiến hành sau khi hoàn tất công việc.",
+      "category": "general"
+    },
+    {
+      "id": 6,
+      "question": "Phú Tân có cung cấp dịch vụ lên kế hoạch thiết kế không?",
+      "answer": "Có, chúng tôi cung cấp dịch vụ tư vấn và lên kế hoạch thiết kế cho dự án của bạn miễn phí.",
+      "category": "general"
+    }
+  ],
+  "demolition": [
+    {
+      "id": 7,
+      "question": "Thời gian tháo dỡ bao lâu?",
+      "answer": "Tùy theo quy mô công trình, từ 1-4 tuần. Chúng tôi sẽ báo giá chi tiết sau khi tham quan hiện trường.",
+      "category": "demolition"
+    },
+    {
+      "id": 8,
+      "question": "Chi phí tháo dỡ bao nhiêu?",
+      "answer": "Chi phí phụ thuộc vào kích thước, độ phức tạp, vật liệu. Liên hệ để nhận báo giá miễn phí trong 24 giờ.",
+      "category": "demolition"
+    },
+    {
+      "id": 9,
+      "question": "Có bảo hành sau tháo dỡ không?",
+      "answer": "Chúng tôi cam kết công trình tháo dỡ sạch, an toàn, hoàn thành đúng tiến độ với hỗ trợ khách hàng 24/7.",
+      "category": "demolition"
+    },
+    {
+      "id": 10,
+      "question": "Có thu mua phế liệu không?",
+      "answer": "Có, chúng tôi thu mua phế liệu, vật tư tháo dỡ có giá trị với giá tốt nhất thị trường, thanh toán nhanh chóng.",
+      "category": "demolition"
+    }
+  ],
+  "furniture": [
+    {
+      "id": 11,
+      "question": "Có bảo hành kính cường lực không?",
+      "answer": "Kính cường lực của chúng tôi được bảo hành 3 năm, hỗ trợ sửa chữa, thay thế trong thời gian bảo hành.",
+      "category": "furniture"
+    },
+    {
+      "id": 12,
+      "question": "Có cắt kính theo kích thước riêng không?",
+      "answer": "Có, chúng tôi cắt kính theo kích thước, hình dạng riêng của khách hàng, giao trong 3-5 ngày.",
+      "category": "furniture"
+    },
+    {
+      "id": 13,
+      "question": "Giá nội thất bao nhiêu?",
+      "answer": "Giá nội thất từ 500k đến 50 triệu tùy loại. Liên hệ để xem hàng, nhận báo giá chi tiết.",
+      "category": "furniture"
+    },
+    {
+      "id": 14,
+      "question": "Vận chuyển mất phí bao nhiêu?",
+      "answer": "Vận chuyển miễn phí với đơn hàng từ 10 triệu. Dưới 10 triệu tính phí vận chuyển theo quãng đường.",
+      "category": "furniture"
+    }
+  ],
+  "installation": [
+    {
+      "id": 15,
+      "question": "Lắp đặt kính cường lực mất bao lâu?",
+      "answer": "Thông thường từ 1-3 ngày tùy theo quy mô dự án. Chúng tôi sẽ lập lịch phù hợp với bạn.",
+      "category": "installation"
+    },
+    {
+      "id": 16,
+      "question": "Chi phí lắp đặt bao nhiêu?",
+      "answer": "Chi phí lắp đặt tính theo diện tích, độ phức tạp công việc. Liên hệ để nhận báo giá chi tiết.",
+      "category": "installation"
+    },
+    {
+      "id": 17,
+      "question": "Có sửa kính vỡ không?",
+      "answer": "Có, chúng tôi cung cấp dịch vụ sửa, thay thế kính cường lực vỡ nhanh chóng, giá cạnh tranh.",
+      "category": "installation"
+    }
+  ],
+  "moving": [
+    {
+      "id": 18,
+      "question": "Chuyên nhà mất bao lâu?",
+      "answer": "Thời gian chuyên nhà tùy theo khối lượng đồ đạc và khoảng cách. Thông thường từ 1-2 ngày.",
+      "category": "moving"
+    },
+    {
+      "id": 19,
+      "question": "Có bảo hành hàng hóa không?",
+      "answer": "Có, chúng tôi bảo hiểm toàn bộ hàng hóa trong quá trình vận chuyển, đảm bảo an toàn 100%.",
+      "category": "moving"
+    },
+    {
+      "id": 20,
+      "question": "Có dùng xe tải chuyên dụng không?",
+      "answer": "Có, chúng tôi sử dụng xe tải chuyên dụng, hiện đại, được bảo trì thường xuyên để đảm bảo an toàn.",
+      "category": "moving"
+    }
+  ],
+  "purchase": [
+    {
+      "id": 21,
+      "question": "Thu mua những loại vật tư gì?",
+      "answer": "Chúng tôi thu mua phế liệu, vật tư kho bãi, các loại kim loại, nhựa, gỗ, kính và vật liệu khác.",
+      "category": "purchase"
+    },
+    {
+      "id": 22,
+      "question": "Giá thu mua cạnh tranh không?",
+      "answer": "Giá thu mua của chúng tôi luôn cạnh tranh nhất thị trường. Liên hệ để nhận báo giá tốt nhất.",
+      "category": "purchase"
+    },
+    {
+      "id": 23,
+      "question": "Thanh toán như thế nào?",
+      "answer": "Chúng tôi thanh toán ngay, không chậm trễ. Chấp nhận tiền mặt, chuyển khoản ngân hàng.",
+      "category": "purchase"
+    }
+  ]
+}

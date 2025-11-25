@@ -43,20 +43,20 @@ const Contact = () => {
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Họ và Tên</label>
-            <input type="text" placeholder="Nhập họ và tên" required />
+            <label htmlFor="fullname">Họ và Tên</label>
+            <input id="fullname" type="text" placeholder="Nhập họ và tên" required />
           </div>
           <div className="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="Nhập email" required />
+            <label htmlFor="email">Email</label>
+            <input id="email" type="email" placeholder="Nhập email" required />
           </div>
           <div className="form-group">
-            <label>Số Điện Thoại</label>
-            <input type="tel" placeholder="Nhập số điện thoại" required />
+            <label htmlFor="phone">Số Điện Thoại</label>
+            <input id="phone" type="tel" placeholder="Nhập số điện thoại" required />
           </div>
           <div className="form-group">
-            <label>Dịch Vụ Cần</label>
-            <select required>
+            <label htmlFor="service">Dịch Vụ Cần</label>
+            <select id="service" required>
               <option value="">-- Chọn dịch vụ --</option>
               <option value="demolition">Tháo dỡ hoàn trả mặt bằng</option>
               <option value="purchase">Thu mua phế liệu, vật tư kho bãi</option>
@@ -66,8 +66,8 @@ const Contact = () => {
             </select>
           </div>
           <div className="form-group">
-            <label>Nội Dung</label>
-            <textarea placeholder="Nhập nội dung tin nhắn" rows="5" required></textarea>
+            <label htmlFor="message">Nội Dung</label>
+            <textarea id="message" placeholder="Nhập nội dung tin nhắn" rows="5" required></textarea>
           </div>
           <button type="submit" className="submit-button">Gửi Tin Nhắn</button>
         </form>
