@@ -31,6 +31,25 @@
   color: #ff6b6b;
 }
 
+.contact-item {
+  gap: 8px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.contact-label {
+  color: #ff6b6b;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.contact-value {
+  color: #ccc;
+  flex: 1;
+}
+
 .footer-section ul {
   list-style: none;
 }

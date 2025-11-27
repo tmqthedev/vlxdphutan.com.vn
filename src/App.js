@@ -13,11 +13,10 @@ const News = lazy(() => import('./pages/News'));
 const Contact = lazy(() => import('./pages/Contact'));
 
 // Lazy load service pages
-const Demolition = lazy(() => import('./pages/services/Demolition'));
-const Purchase = lazy(() => import('./pages/services/Purchase'));
-const Moving = lazy(() => import('./pages/services/Moving'));
-const Furniture = lazy(() => import('./pages/services/Furniture'));
-const Installation = lazy(() => import('./pages/services/Installation'));
+const GroundSolutions = lazy(() => import('./pages/services/GroundSolutions'));
+const BespokeInterior = lazy(() => import('./pages/services/BespokeInterior'));
+const GlazingSolutions = lazy(() => import('./pages/services/GlazingSolutions'));
+const MaterialSupplyContract = lazy(() => import('./pages/services/MaterialSupplyContract'));
 
 // Lazy load about pages
 const AboutUs = lazy(() => import('./pages/about/AboutUs'));
@@ -53,11 +52,10 @@ function AppContent() {
             <Route path="/contact" element={<Contact />} />
 
             {/* Services routes */}
-            <Route path="/services/demolition" element={<Demolition />} />
-            <Route path="/services/purchase" element={<Purchase />} />
-            <Route path="/services/moving" element={<Moving />} />
-            <Route path="/services/furniture" element={<Furniture />} />
-            <Route path="/services/installation" element={<Installation />} />
+            <Route path="/services/ground-solutions" element={<GroundSolutions />} />
+            <Route path="/services/bespoke-interior" element={<BespokeInterior />} />
+            <Route path="/services/glazing-solutions" element={<GlazingSolutions />} />
+            <Route path="/services/material-supply-contract" element={<MaterialSupplyContract />} />
 
             {/* About routes */}
             <Route path="/about/us" element={<AboutUs />} />

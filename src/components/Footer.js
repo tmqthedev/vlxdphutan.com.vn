@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import servicesData from '../data/servicesData.json';
 import '../styles/Footer.css';
 
 const Footer = () => {
@@ -9,27 +10,34 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Liên Hệ Nhanh</h3>
           <div className="footer-contact">
-            <p>
-              <strong>Địa chỉ:</strong>
-            </p>
-            <p>
-              <strong>Hotline công ty:</strong>
-            </p>
-            <p>
-              <strong>Hotline Zalo:</strong>
-            </p>
-            <p>
-              <strong>Mã số thuế:</strong>
-            </p>
-            <p>
-              <strong>Tài khoản:</strong>
-            </p>
-            <p>
-              <strong>Người đại diện: Hoàng Minh Phương - CEO</strong>
-            </p>
-            <p>
-              <strong>Email:</strong>
-            </p>
+            <div className="contact-item">
+              <span className="contact-label">Địa chỉ: </span>
+              <span className="contact-value">Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh, Việt Nam.</span>
+            </div>
+            <div className="contact-item">
+              <span className="contact-label">Hotline công ty: </span>
+              <span className="contact-value">0937 685 069</span>
+            </div>
+            <div className="contact-item">
+              <span className="contact-label">Hotline Zalo: </span>
+              <span className="contact-value">0915 899 071</span>
+            </div>
+            <div className="contact-item">
+              <span className="contact-label">Mã số thuế: </span>
+              <span className="contact-value">370 297 4425</span>
+            </div>
+            <div className="contact-item">
+              <span className="contact-label">Tài khoản: </span>
+              <span className="contact-value">038 68 68 68 79 79 - Ngân hàng Cổ phần Quân đội MB Bank</span>
+            </div>
+            <div className="contact-item">
+              <span className="contact-label">Người đại diện: </span>
+              <span className="contact-value">Hoàng Minh Phương - CEO</span>
+            </div>
+            <div className="contact-item">
+              <span className="contact-label">Email: </span>
+              <span className="contact-value">thuongmaiphutan@gmail.com</span>
+            </div>
           </div>
         </div>
 
@@ -46,11 +54,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Dịch Vụ</h3>
           <ul>
-            <li><Link to="/services/demolition">Tháo dỡ hoàn trả mặt bằng</Link></li>
-            <li><Link to="/services/purchase">Thu mua phế liệu, vật tư kho bãi</Link></li>
-            <li><Link to="/services/moving">Chuyên nhà, chuyên văn phòng</Link></li>
-            <li><Link to="/services/furniture">Mua bán nội thất, kính cường lực</Link></li>
-            <li><Link to="/services/installation">Thi công lắp đặt kính cường lực</Link></li>
+            {Object.keys(servicesData).map(key => (
+              <li key={key}>
+                <Link to={`/services/${key}`}>{servicesData[key].title}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

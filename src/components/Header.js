@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import servicesData from '../data/servicesData.json';
 import '../styles/Header.css';
 
 const Header = () => {
@@ -11,13 +12,12 @@ const Header = () => {
     setActiveSubmenu(activeSubmenu === submenu ? null : submenu);
   };
 
-  const services = [
-    { id: 'demolition', label: 'Tháo dỡ hoàn trả mặt bằng', path: '/services/demolition' },
-    { id: 'purchase', label: 'Thu mua phế liệu, vật tư kho bãi', path: '/services/purchase' },
-    { id: 'moving', label: 'Chuyển nhà, chuyển văn phòng', path: '/services/moving' },
-    { id: 'furniture', label: 'Mua bán nội thất, kính cường lực', path: '/services/furniture' },
-    { id: 'installation', label: 'Thi công lắp đặt kính cường lực', path: '/services/installation' }
-  ];
+  // Convert services data object to array format
+  const services = Object.keys(servicesData).map(key => ({
+    id: key,
+    label: servicesData[key].title,
+    path: `/services/${key}`
+  }));
 
   const about = [
     { label: 'Về Phú Tân', path: '/about/us' },
@@ -30,8 +30,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/">
-            <h1>PHÚ TÂN</h1>
-            <p>Vật Liệu Xây Dựng</p>
+            <img src="/assets/images/logo.png" alt="Phú Tân Logo" />
           </Link>
         </div>
 

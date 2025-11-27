@@ -7,19 +7,21 @@ import servicesData from '../data/servicesData.json';
 import faqData from '../data/faqData.json';
 import '../styles/Services.css';
 
-const ServiceDetail = ({ serviceId = 'demolition' }) => {
+const ServiceDetail = ({ serviceId = 'ground-solutions' }) => {
   const serviceContent = servicesData[serviceId];
 
   if (!serviceContent) {
     return <div className="service-page">Dịch vụ không tìm thấy</div>;
   }
 
+  // Get service-specific FAQs only
+  const serviceFaqs = faqData[serviceId] || [];
+
   const categories = [
-    { id: 'demolition', label: 'Tháo dỡ hoàn trả mặt bằng' },
-    { id: 'purchase', label: 'Thu mua phế liệu, vật tư kho bãi' },
-    { id: 'moving', label: 'Chuyên nhà, chuyên văn phòng' },
-    { id: 'furniture', label: 'Mua bán nội thất, kính cường lực' },
-    { id: 'installation', label: 'Thi công lắp đặt kính cường lực' }
+    { id: 'ground-solutions', label: 'Giải Pháp Gia Cố Nền Móng Chuyên Sâu' },
+    { id: 'bespoke-interior', label: 'Thiết bị Nội thất & Thiết kế riêng' },
+    { id: 'glazing-solutions', label: 'Giải pháp Nhôm kính Thẩm mỹ & Hiện đại' },
+    { id: 'material-supply-contract', label: 'Hợp đồng cung ứng Vật tư Công trình Trọn gói' }
   ];
 
   return (
@@ -79,6 +81,7 @@ const ServiceDetail = ({ serviceId = 'demolition' }) => {
                 </div>
               )}
 
+              {/* Ưu Điểm Nổi Bật
               {serviceContent.advantages && (
                 <div className="content-section">
                   <h3>Ưu Điểm Nổi Bật</h3>
@@ -92,12 +95,7 @@ const ServiceDetail = ({ serviceId = 'demolition' }) => {
                   </ul>
                 </div>
               )}
-
-              <div className="cta-section">
-                <h3>Liên Hệ Ngay Để Nhận Báo Giá</h3>
-                <p>Hotline: <strong>0933 358 717 – 0909 583 236</strong></p>
-                <button className="cta-button">Yêu Cầu Báo Giá</button>
-              </div>
+              */}
             </main>
           </div>
         </LazyLoad>
@@ -108,11 +106,11 @@ const ServiceDetail = ({ serviceId = 'demolition' }) => {
         <section className="faq-section">
           <div className="faq-container">
             <h2>Các Câu Hỏi Thường Gặp</h2>
-            <FAQList faqs={faqData[serviceId] || []} />
+            <FAQList faqs={serviceFaqs} />
           </div>
         </section>
-      </LazyLoad>
-
+      </LazyLoad>      
+      
       {/* Gallery Section with ImageSlider */}
       <LazyLoad animation="fadeIn" delay={200}>
         <section className="gallery-section">

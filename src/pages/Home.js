@@ -1,37 +1,52 @@
 import React, { useState } from 'react';
 import AnimateNumber from '../components/AnimateNumber';
 import LazyLoad from '../components/LazyLoad';
+import servicesData from '../data/servicesData.json';
 import '../styles/Home.css';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [servicesSlideIndex, setServicesSlideIndex] = useState(0);
 
   const slides = [
     {
       id: 1,
-      title: 'Công Ty Vật Liệu Xây Dựng Phú Tân',
-      subtitle: 'Chuyên cung cấp dịch vụ tháo dỡ, chuyên nhân tài với chất lượng hàng đầu',
+      title: 'Giải Pháp Gia Cố Nền Móng Chuyên Sâu',
+      subtitle: 'Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.',
       image: 'linear-gradient(135deg, #1e90ff 0%, #ff6b6b 100%)'
     },
     {
       id: 2,
-      title: 'Tháo Dỡ Chuyên Nghiệp',
-      subtitle: 'Đội ngũ lành nghề, thiết bị hiện đại, đảm bảo an toàn lao động',
+      title: 'Thiết bị Nội thất & Thiết kế riêng',
+      subtitle: 'Chúng tôi cung cấp sự kết hợp hoàn hảo giữa các sản phẩm nội thất thương hiệu hàng đầu và các giải pháp gia công tùy chỉnh theo yêu cầu, đáp ứng mọi yêu cầu về thẩm mỹ và công năng.',
       image: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
       id: 3,
-      title: 'Dịch Vụ Chuyên Nhà',
-      subtitle: 'Chuyển nhà, văn phòng nhanh chóng, an toàn, giữ nguyên vẹn hàng hóa',
+      title: 'Giải pháp Nhôm kính Thẩm mỹ & Hiện đại',
+      subtitle: 'Cung cấp và thi công các hệ thống nhôm kính chất lượng cao, mang lại giải pháp ánh sáng tự nhiên, cách nhiệt tối ưu và nâng cao giá trị kiến trúc.',
       image: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
     {
       id: 4,
-      title: 'Mua Bán Nội Thất & Kính Cường Lực',
-      subtitle: 'Sản phẩm chất lượng cao, giá cạnh tranh, phục vụ tận tâm',
+      title: 'Hợp đồng cung ứng Vật tư Công trình Trọn gói',
+      subtitle: 'Giải pháp hợp đồng toàn diện nhằm đơn giản hóa quy trình mua sắm, tối ưu hóa nguồn lực và đảm bảo tiến độ dự án.',
       image: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
     }
   ];
+
+  // Convert services data object to array format for display
+  const servicesArray = Object.keys(servicesData).map(key => ({
+    id: key,
+    label: 'Dịch vụ',
+    title: servicesData[key].title,
+    description: servicesData[key].intro,
+    image: servicesData[key].heroImage,
+    link: `/services/${key}`
+  }));
+
+  const ITEMS_PER_SLIDE = 4;
+  const totalServicesSlides = Math.ceil(servicesArray.length / ITEMS_PER_SLIDE);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -43,6 +58,19 @@ const Home = () => {
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
+  };
+
+  const nextServicesSlide = () => {
+    setServicesSlideIndex((prev) => (prev + 1) % totalServicesSlides);
+  };
+
+  const prevServicesSlide = () => {
+    setServicesSlideIndex((prev) => (prev - 1 + totalServicesSlides) % totalServicesSlides);
+  };
+
+  const getVisibleServices = () => {
+    const startIndex = servicesSlideIndex * ITEMS_PER_SLIDE;
+    return servicesArray.slice(startIndex, startIndex + ITEMS_PER_SLIDE);
   };
 
   return (
@@ -129,17 +157,16 @@ const Home = () => {
 
           {/* Right Column - Text */}
           <div className="text-column">
-            <h3>Công ty Phú Tân chuyên thu mua nội thất, tháo dỡ - hoàn trả mặt bằng và thi công kính cường lực.</h3>
+            <h3>Quá trình thành lập</h3>
             
-            <p><strong>Kính gửi Quý Khách Hàng,</strong></p>
-            
-            <p>Trước hết, tôi xin gửi lời chào trân trọng và lời cảm ơn sâu sắc đến Quý Khách Hàng vì đã tin tưởng và ủng hộ chúng tôi trong suốt thời gian qua.</p>
+            <p>Thành lập từ năm 2021, Công ty TNHH Tư vấn Thương mại Dịch vụ Phú Tân tự hào quy tụ đội ngũ thành viên giàu kinh nghiệm và đầy tâm huyết. Tuy còn non trẻ, Phú Tân đã nhanh chóng khẳng định vị thế vững chắc, trở thành đối tác tin cậy trong lĩnh vực sản xuất và cung cấp vật liệu xây dựng (VLXD).</p>
 
-            <p>Chúng tôi hiểu rằng sự tiết kiệm thời gian và hiệu quả trong công việc là yếu tố quan trọng trong đối với bạn. Chính vì vậy, với mỗi dịch vụ chúng tôi cung cấp, bạn sẽ nhận được sự chăm sóc tận tình và đảm bảo tiến độ hoàn thành nhanh chóng, đúng yêu cầu, chi phí hợp lý. Với phương châm "Uy tín - Nhanh chóng - Tối ưu - Chất lượng", Phú Tân sẽ là đối tác tin cậy, đông hành cùng Quý Khách Hàng trong mỗi công trình và dự án.</p>
+            <p>Chúng tôi cam kết mang đến những sản phẩm VLXD chất lượng vượt trội, với mức giá cạnh tranh nhất và phương thức vận chuyển tối ưu. Sự trưởng thành nhanh chóng của Phú Tân trong vài năm qua là minh chứng cho sự tín nhiệm mà khách hàng đã dành cho chúng tôi.</p>
 
-            <p>Chúng tôi mong muốn tiếp tục nhận được sự ủng hộ và hợp tác từ Quý Khách Hàng trong thời gian tới. Xin chân thành cảm ơn và chúc Quý Khách Hàng sức khỏe, thành công và thịnh vượng.</p>
+            <p>Với phương châm "Uy tín, Chất lượng, Tiện lợi, Hiệu quả", Phú Tân luôn đồng hành cùng các chủ đầu tư, thực hiện công tác giám sát chất lượng sản phẩm chặt chẽ. Chúng tôi không ngừng tư vấn và quản lý nguồn VLXD, đảm bảo chất lượng, an toàn, hiệu quả và đúng tiến độ. Tất cả nhằm mang lại lợi ích tối ưu cho khách hàng và đóng góp tích cực cho xã hội, xứng đáng với mọi niềm tin và kỳ vọng mà quý vị đã gửi gắm.</p>
 
             <div className="ceo-signature">
+              <img src="/assets/images/home/signature.png" alt="CEO Signature" className="signature-image" />
               <p className="ceo-sign">Trân trọng,</p>
               <br></br><br></br><br></br>
               <p className="ceo-title">CEO<p className="ceo-name"> Hoàng Minh Phương</p></p>
@@ -153,86 +180,48 @@ const Home = () => {
         <LazyLoad animation="slideUp" delay={100}>
           <h2>DỊCH VỤ CHÚNG TÔI CUNG CẤP</h2>
           <div className="services-carousel">
-          <div className="service-item">
-            <div className="service-image">
-              <img src="https://via.placeholder.com/400x300/cccccc/999999?text=Tháo+Dỡ" alt="Tháo Dỡ" />
-            </div>
-            <div className="service-info">
-              <span className="service-label">Dịch vụ</span>
-              <h3>Tháo dỡ hoàn trả mặt bằng</h3>
-            </div>
-            <div className="service-hover">
-              <p>Dịch vụ tháo dỡ, làm sạch mặt bằng sau thi công hoặc đổi công trình.</p>
-              <a href="/services/demolition" className="service-btn">
-                <span>➜</span> Xem Thêm
-              </a>
-            </div>
+            {getVisibleServices().map((service) => (
+              <div key={service.id} className="service-item">
+                <div className="service-image">
+                  <img src={service.image} alt={service.title} />
+                </div>
+                <div className="service-info">
+                  <span className="service-label">{service.label}</span>
+                  <h3>{service.title}</h3>
+                </div>
+                <div className="service-hover">
+                  <p>{service.description}</p>
+                  <a href={service.link} className="service-btn">
+                    <span>➜</span> Xem Thêm
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
 
-          <div className="service-item">
-            <div className="service-image">
-              <img src="https://via.placeholder.com/400x300/cccccc/999999?text=Thu+Mua" alt="Thu Mua" />
+          {/* Services Navigation - Only show if more than 4 services */}
+          {servicesArray.length > 4 && (
+            <div className="services-navigation">
+              <button className="slider-btn prev-btn" onClick={prevServicesSlide}>
+                ◀
+              </button>
+              <div className="services-indicators">
+                {Array.from({ length: totalServicesSlides }).map((_, index) => (
+                  <button
+                    key={`service-slide-${servicesSlideIndex}-${index}`}
+                    className={`indicator ${index === servicesSlideIndex ? 'active' : ''}`}
+                    onClick={() => setServicesSlideIndex(index)}
+                    aria-label={`Go to services slide ${index + 1}`}
+                  >
+                    {index + 1}
+                  </button>
+                ))}
+              </div>
+              <button className="slider-btn next-btn" onClick={nextServicesSlide}>
+                ▶
+              </button>
             </div>
-            <div className="service-info">
-              <span className="service-label">Dịch vụ</span>
-              <h3>Thu mua phế liệu, vật tư kho bãi</h3>
-            </div>
-            <div className="service-hover">
-              <p>Chúng tôi mua sắm phế liệu, vật tư kho bãi với giá tốt nhất thị trường.</p>
-              <a href="/services/purchase" className="service-btn">
-                <span>➜</span> Xem Thêm
-              </a>
-            </div>
-          </div>
-
-          <div className="service-item">
-            <div className="service-image">
-              <img src="https://via.placeholder.com/400x300/cccccc/999999?text=Chuyên+Nhà" alt="Chuyển Nhà" />
-            </div>
-            <div className="service-info">
-              <span className="service-label">Dịch vụ</span>
-              <h3>Chuyển nhà, văn phòng</h3>
-            </div>
-            <div className="service-hover">
-              <p>Chuyển nhà, chuyên văn phòng nhanh chóng, an toàn, giữ nguyên vẹn hàng hóa.</p>
-              <a href="/services/moving" className="service-btn">
-                <span>➜</span> Xem Thêm
-              </a>
-            </div>
-          </div>
-
-          <div className="service-item">
-            <div className="service-image">
-              <img src="https://via.placeholder.com/400x300/cccccc/999999?text=Nội+Thất" alt="Nội Thất" />
-            </div>
-            <div className="service-info">
-              <span className="service-label">Dịch vụ</span>
-              <h3>Mua bán nội thất, kính cường lực</h3>
-            </div>
-            <div className="service-hover">
-              <p>Kinh cường lực chất lượng cao với giá cạnh tranh, phục vụ tận tâm.</p>
-              <a href="/services/furniture" className="service-btn">
-                <span>➜</span> Xem Thêm
-              </a>
-            </div>
-          </div>
-
-          <div className="service-item">
-            <div className="service-image">
-              <img src="https://via.placeholder.com/400x300/cccccc/999999?text=Kính+Cường+Lực" alt="Kính Cường Lực" />
-            </div>
-            <div className="service-info">
-              <span className="service-label">Dịch vụ</span>
-              <h3>Thi công kính cường lực</h3>
-            </div>
-            <div className="service-hover">
-              <p>Thi công lắp đặt kính cường lực chuyên nghiệp với đội ngũ lành nghề.</p>
-              <a href="/services/installation" className="service-btn">
-                <span>➜</span> Xem Thêm
-              </a>
-            </div>
-          </div>
-        </div>
+          )}
         </LazyLoad>
       </section>
 

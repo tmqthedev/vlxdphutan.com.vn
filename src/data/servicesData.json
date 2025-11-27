@@ -1,217 +1,74 @@
 {
-  "demolition": {
-    "title": "Tháo Dỡ Hoàn Trả Mặt Bằng",
-    "intro": "Phú Tân chuyên cung cấp dịch vụ tháo dỡ hoàn trả mặt bằng với đội ngũ chuyên nghiệp, thiết bị hiện đại, đảm bảo an toàn lao động và hoàn thành đúng tiến độ.",
+  "ground-solutions": {
+    "title": "Giải Pháp Gia Cố Nền Móng Chuyên Sâu",
+    "intro": "Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.",
     "heroImage": "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=1200&h=600&fit=crop",
     "services": [
-      "Tháo dỡ hoàn toàn các công trình, tòa nhà",
-      "Tháo dỡ nội thất, thiết bị cơ điện",
-      "Dọn dẹp vệ sinh sau tháo dỡ",
-      "Xử lý chất thải theo quy định pháp luật",
-      "Thu mua vật liệu tháo dỡ có giá trị"
+      "Cừ tràm: Được tuyển chọn kĩ càng, đủ kích thước, thông số ngọn gốc theo yêu cầu, đảm bảo khả năng chịu lực nén và ổn định nền móng trong môi trường ngập nước hoặc đất yếu.",
+      "Vải địa kỹ thuật: Cung cấp giải pháp phân cách, lọc, thoát nước và gia cường nền đất hiệu quả, kéo dài tuổi thọ công trình.",
+      "Giải pháp chống thấm & bảo vệ: Giấy dầu, màng chống thấm chuyên dụng, bao tải chất lượng cao phục vụ bảo vệ cấu kiện và thi công.",
+      "Rọ Đá: Giải pháp kè bờ, chống xói mòn và ổn định mái dốc linh hoạt, thân thiện với môi trường, mang lại tính thẩm mỹ và độ bền vượt trội.",
+      "Vật tư, phụ kiện khác: Lắng nghe mong muốn, đề xuất của Khách hàng cho những giải pháp riêng biệt, thích hợp nhiều loại địa hình."
     ],
     "advantages": [
-      "Đội ngũ chuyên nghiệp, có chứng chỉ thi công",
-      "Thiết bị tháo dỡ hiện đại, an toàn",
-      "Đảm bảo an toàn lao động 100%",
-      "Giá cạnh tranh, minh bạch",
-      "Hoàn thành đúng tiến độ, không chậm trễ"
-    ],
-    "faq": [
-      {
-        "question": "Thời gian tháo dỡ bao lâu?",
-        "answer": "Tùy theo quy mô công trình, từ 1-4 tuần. Chúng tôi sẽ báo giá chi tiết sau khi tham quan hiện trường."
-      },
-      {
-        "question": "Chi phí tháo dỡ bao nhiêu?",
-        "answer": "Chi phí phụ thuộc vào kích thước, độ phức tạp, vật liệu. Liên hệ để nhận báo giá miễn phí trong 24 giờ."
-      },
-      {
-        "question": "Có bảo hành sau tháo dỡ không?",
-        "answer": "Chúng tôi cam kết công trình tháo dỡ sạch, an toàn, hoàn thành đúng tiến độ với hỗ trợ khách hàng 24/7."
-      },
-      {
-        "question": "Có thu mua phế liệu không?",
-        "answer": "Có, chúng tôi thu mua phế liệu, vật tư tháo dỡ có giá trị với giá tốt nhất thị trường, thanh toán nhanh chóng."
-      }
+      
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1548365328-c9fa89d128fa?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1586957606827-ebb4b4a11b20?w=500&h=400&fit=crop"
+      "/assets/images/services/ground-solutions/ground-solutions_img_1.png",
+      "/assets/images/services/ground-solutions/ground-solutions_img_2.png",
+      "/assets/images/services/ground-solutions/ground-solutions_img_3.png",
+      "/assets/images/services/ground-solutions/ground-solutions_img_4.png"
     ]
   },
-  "furniture": {
-    "title": "Mua Bán Nội Thất, Kính Cường Lực",
-    "intro": "Phú Tân cung cấp các loại nội thất chất lượng cao, kính cường lực đa dạng cho nhà ở, văn phòng, cửa hàng với giá cạnh tranh.",
-    "heroImage": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=600&fit=crop",
+
+  "bespoke-interior": {
+    "title": "Thiết bị Nội thất & Thiết kế riêng",
+    "intro": "Chúng tôi cung cấp sự kết hợp hoàn hảo giữa các sản phẩm nội thất thương hiệu hàng đầu và các giải pháp gia công tùy chỉnh theo yêu cầu, đáp ứng mọi yêu cầu về thẩm mỹ và công năng.",
+    "heroImage": "/assets/images/services/bespoke-interior/bespoke-interior_banner.jpg",
     "services": [
-      "Bán các loại nội thất gia dụng, ngoài trời",
-      "Cung cấp kính cường lực cắt theo yêu cầu",
-      "Lắp đặt, vận chuyển nội thất, kính cường lực",
-      "Tư vấn thiết kế nội thất miễn phí",
-      "Thu mua nội thất cũ, kính vỡ"
+      "Nội thất Thương mại Cao cấp: Phân phối chính hãng các dòng sản phẩm từ các thương hiệu uy tín (như Hòa Phát, D Furni,... và các đối tác khác) với cam kết về chất lượng, thiết kế hiện đại và độ bền vượt trội.",
+      "Nội thất Gia công Thẩm mỹ: Dịch vụ thiết kế và thi công nội thất theo yêu cầu riêng, từ vật liệu, kích thước đến kiểu dáng, đảm bảo sự độc đáo, tối ưu không gian và phản ánh đúng phong cách cá nhân/thương hiệu của khách hàng."
     ],
     "advantages": [
-      "Kho hàng lớn, đa dạng mẫu mã",
-      "Giá bán sỉ, lẻ cạnh tranh nhất khu vực",
-      "Kính cường lực chứng chỉ, an toàn",
-      "Giao hàng nhanh, trong vòng 48 giờ",
-      "Bảo hành sản phẩm lên đến 3 năm"
-    ],
-    "faq": [
-      {
-        "question": "Có bảo hành kính cường lực không?",
-        "answer": "Kính cường lực của chúng tôi được bảo hành 3 năm, hỗ trợ sửa chữa, thay thế trong thời gian bảo hành."
-      },
-      {
-        "question": "Có cắt kính theo kích thước riêng không?",
-        "answer": "Có, chúng tôi cắt kính theo kích thước, hình dạng riêng của khách hàng, giao trong 3-5 ngày."
-      },
-      {
-        "question": "Giá nội thất bao nhiêu?",
-        "answer": "Giá nội thất từ 500k đến 50 triệu tùy loại. Liên hệ để xem hàng, nhận báo giá chi tiết."
-      },
-      {
-        "question": "Vận chuyển mất phí bao nhiêu?",
-        "answer": "Vận chuyển miễn phí với đơn hàng từ 10 triệu. Dưới 10 triệu tính phí vận chuyển theo quãng đường."
-      }
+      
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1586023566828-dd3c0e6ed1ba?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1585399492813-bba2c87b84fb?w=500&h=400&fit=crop"
+      "/assets/images/services/bespoke-interior/bespoke-interior_img.jpg"
     ]
   },
-  "installation": {
-    "title": "Thi Công Lắp Đặt Kính Cường Lực",
-    "intro": "Phú Tân cung cấp dịch vụ thi công, lắp đặt kính cường lực chuyên nghiệp cho nhà ở, văn phòng, cửa hàng với độ chính xác cao.",
+  
+  "glazing-solutions": {
+    "title": "Giải pháp Nhôm kính Thẩm mỹ & Hiện đại",
+    "intro": "Cung cấp và thi công các hệ thống nhôm kính chất lượng cao, mang lại giải pháp ánh sáng tự nhiên, cách nhiệt tối ưu và nâng cao giá trị kiến trúc.",
     "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=600&fit=crop",
     "services": [
-      "Lắp đặt kính cường lực bề mặt, cửa",
-      "Lắp đặt kính cường lực vách ngăn, sàn",
-      "Lắp đặt kính cường lực ban công, cửa sổ",
-      "Thi công khung nhôm, sắt cho kính",
-      "Sữa chữa, thay thế kính cường lực vỡ"
+      "Hệ cửa/vách Nhôm kính: Sử dụng vật liệu hợp kim nhôm cao cấp (ví dụ: Xingfa, PMA, Việt Pháp,...) với công nghệ xử lý bề mặt hiện đại, đảm bảo độ cứng, chịu lực và chống ăn mòn.",
+      "Kính chuyên dụng: Kính cường lực, kính dán an toàn, đáp ứng các tiêu chuẩn khắt khe về an toàn và tiết kiệm năng lượng.",
+      "Thi công tay nghề cao: Với đội ngũ kỹ thuật trình độ cao, đảm bảo độ kín khít tuyệt đối, vận hành êm ái và tính thẩm mỹ cao cho mặt dựng, cửa sổ, cửa đi các loại."
     ],
     "advantages": [
-      "Đội thi công chuyên nghiệp, kinh nghiệm 10+ năm",
-      "Thiết bị thi công hiện đại, đảm bảo chất lượng",
-      "Lắp đặt khít, không rò nước, không rõi kính",
-      "Tư vấn thiết kế, báo giá nhanh chóng",
-      "Bảo hành thi công lên đến 2 năm"
-    ],
-    "faq": [
-      {
-        "question": "Thời gian thi công bao lâu?",
-        "answer": "Tùy theo diện tích công trình. Một phòng thường mất 1-3 ngày. Toàn nhà 3-7 ngày."
-      },
-      {
-        "question": "Kính cường lực có bền bao lâu?",
-        "answer": "Kính cường lực có tuổi thọ 20-30 năm, miễn là lắp đặt đúng kỹ thuật và không va chạm mạnh."
-      },
-      {
-        "question": "Giá lắp đặt bao nhiêu?",
-        "answer": "Giá lắp đặt từ 300k-500k/m2 tùy loại kính, độ phức tạp. Báo giá free sau khi tham quan."
-      },
-      {
-        "question": "Có dọn dẹp vệ sinh sau thi công không?",
-        "answer": "Có, chúng tôi tự dọn dẹp hoàn toàn sau thi công, để lại công trình sạch sẽ 100%."
-      }
+      
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1604614902674-adf82b64ae14?w=500&h=400&fit=crop"
+      
     ]
   },
-  "moving": {
-    "title": "Chuyên Nhà, Chuyên Văn Phòng",
-    "intro": "Phú Tân chuyên cung cấp dịch vụ chuyên nhà, chuyên văn phòng uy tín, an toàn, với giá cạnh tranh và đội thợ chuyên nghiệp.",
+  "material-supply-contract": {
+    "title": "Hợp đồng cung ứng Vật tư Công trình Trọn gói",
+    "intro": "Giải pháp hợp đồng toàn diện nhằm đơn giản hóa quy trình mua sắm, tối ưu hóa nguồn lực và đảm bảo tiến độ dự án.",
     "heroImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=600&fit=crop",
     "services": [
-      "Chuyên nhà, căn hộ, biệt thự toàn quốc",
-      "Chuyên văn phòng, công ty, cơ quan",
-      "Chuyên hàng hoá, thiết bị công nghiệp",
-      "Đóng gói, vận chuyển, sắp xếp hàng hoá",
-      "Cho thuê xe tải, xe tho 5 - 20 tấn"
+      "Quản lý cung ứng tập trung: Chúng tôi chịu trách nhiệm cung cấp tất cả các loại vật tư từ thô đến hoàn thiện, bao gồm cả 3 hạng mục trên, với chất lượng đồng bộ và nguồn gốc rõ ràng.",
+      "Tối ưu Chi phí & Thời gian: Khách hàng chỉ làm việc với một đối tác duy nhất, giảm thiểu rủi ro phát sinh, đơn giản hóa thủ tục thanh toán và tiết kiệm thời gian quản lý chuỗi cung ứng.",
+      "Cam kết chất lượng đồng nhất: Đảm bảo vật tư đầy đủ giấy tờ, chứng từ được kiểm soát chất lượng nghiêm ngặt theo tiêu chuẩn Việt Nam."
     ],
     "advantages": [
-      "Đội chuyên gia dày dặn kinh nghiệm",
-      "Xe tải mới, sạch, có bạt phủ",
-      "Chuyên nhanh, cẩn thận, không hư hỏng",
-      "Giá cạnh tranh, có bảo hiểm hàng hoá",
-      "Phục vụ 24/7, kể cả thứ 7, chủ nhật"
-    ],
-    "faq": [
-      {
-        "question": "Phí chuyên nhà bao nhiêu?",
-        "answer": "Giá từ 2-5 triệu/lần chuyên nhà tùy khoảng cách, khối lượng hàng. Tham quan miễn phí, báo giá chi tiết."
-      },
-      {
-        "question": "Có bảo hiểm hàng hoá không?",
-        "answer": "Có, hàng hoá được bảo hiểm 100%, nếu hỏng trong quá trình chuyên thì chúng tôi bồi thường toàn bộ."
-      },
-      {
-        "question": "Chuyên ban đêm có được không?",
-        "answer": "Có, chúng tôi phục vụ 24/7. Chuyên ban đêm tính phí thêm 20% so với giá ban ngày."
-      },
-      {
-        "question": "Có dịch vụ sắp xếp hàng không?",
-        "answer": "Có, chúng tôi cung cấp dịch vụ sắp xếp, lắp ráp nội thất tại nơi mới với phí bổ sung."
-      }
+      
     ],
     "gallery": [
       "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&h=400&fit=crop",
       "https://images.unsplash.com/photo-1578926078328-123c27246e5d?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1578926314433-b81a4e0b19c1?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1570129477492-45a003d3e1bb?w=500&h=400&fit=crop"
-    ]
-  },
-  "purchase": {
-    "title": "Thu Mua Phế Liệu, Vật Tư Kho Bãi",
-    "intro": "Phú Tân chuyên thu mua phế liệu sắt, thép, nhôm, đồng, nhựa, giấy, gỗ và các vật tư kho bãi cũ với giá cao nhất thị trường.",
-    "heroImage": "https://images.unsplash.com/photo-1604307176684-a65da8c42d89?w=1200&h=600&fit=crop",
-    "services": [
-      "Thu mua phế liệu sắt, thép, nhôm",
-      "Thu mua phế liệu đồng, chì, nhựa",
-      "Thu mua giấy vụn, gỗ, nhôm cũ",
-      "Thu mua máy móc, thiết bị cũ, hỏng",
-      "Thu mua kho bãi, tàn tích công trường"
-    ],
-    "advantages": [
-      "Giá cao nhất khu vực, thanh toán nhanh",
-      "Có phương tiện để khách hàng giao hàng",
-      "Yên tâm không bị lừa về chất lượng",
-      "Hỗ trợ tư vấn giá phế liệu hàng ngày",
-      "Không phát sinh phí ẩn, minh bạch 100%"
-    ],
-    "faq": [
-      {
-        "question": "Giá phế liệu hôm nay bao nhiêu?",
-        "answer": "Giá phế liệu biến động hàng ngày theo giá thế giới. Gọi 0933 358 717 để biết giá mới nhất."
-      },
-      {
-        "question": "Có tưởng tiền không?",
-        "answer": "Có, chúng tôi tưởng tiền 100% giá trị phế liệu khi nhận hàng. Không có phát sinh phí sau."
-      },
-      {
-        "question": "Có tới nhà mua không?",
-        "answer": "Có, với lượng phế liệu lớn (trên 100kg), chúng tôi sẽ tới nhà bạn để mua, vận chuyển miễn phí."
-      },
-      {
-        "question": "Mua phế liệu nhôm cũ bao nhiêu tiền/kg?",
-        "answer": "Nhôm cũ được mua từ 30,000 - 35,000 đồng/kg tùy loại và khối lượng. Báo giá chính xác khi bạn gọi."
-      }
-    ],
-    "gallery": [
-      "https://images.unsplash.com/photo-1604307176684-a65da8c42d89?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1532996122724-8f3c2cd83c5d?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1569163139394-de4798aa62b3?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1533018783255-a9cc003b25bf?w=500&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1578926314433-b81a4e0b19c1?w=500&h=400&fit=crop"
     ]
   }
 }
