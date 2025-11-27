@@ -21,11 +21,11 @@ const AboutUs = () => {
           <h2>Thông Tin Công Ty</h2>
           <ul>
             <li><strong>Tên công ty:</strong> Công Ty TNHH Vật Liệu Xây Dựng Phú Tân</li>
-            <li><strong>Mã số thuế:</strong> 0316093402</li>
-            <li><strong>Địa chỉ:</strong> 22/4 Đường Lâm Văn Bền, KP4, Phường Tân Quy, Quận 7, TP HCM</li>
-            <li><strong>Người đại diện:</strong> Bà Nguyễn Thị Thủy Trang</li>
+            <li><strong>Mã số thuế:</strong> 370 297 4425</li>
+            <li><strong>Địa chỉ:</strong> Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh, Việt Nam.</li>
+            <li><strong>Người đại diện:</strong> Ông Hoàng Minh Phương</li>
             <li><strong>Chức vụ:</strong> Giám Đốc</li>
-            <li><strong>Hotline:</strong> 0933 358 717 – 0909 583 236</li>
+            <li><strong>Hotline:</strong> 0937 685 069</li>
           </ul>
         </section>
 
@@ -54,12 +54,11 @@ const AboutUs = () => {
         </section>
 
         <section>
-          <h2>Lịch Sử Phát Triển</h2>
-          <p>
-            Từ khi thành lập, Phú Tân đã phục vụ hàng ngàn khách hàng cá nhân và doanh nghiệp, 
-            xây dựng uy tín và niềm tin từ khách hàng. Chúng tôi không ngừng cải tiến dịch vụ, 
-            đầu tư trang thiết bị hiện đại và nâng cao kỹ năng đội ngũ nhân viên.
-          </p>
+          <h2>Quá trình thành lập</h2>
+            <p>Thành lập từ năm 2021, Công ty TNHH Tư vấn Thương mại Dịch vụ Phú Tân tự hào quy tụ đội ngũ thành viên giàu kinh nghiệm và đầy tâm huyết. Tuy còn non trẻ, Phú Tân đã nhanh chóng khẳng định vị thế vững chắc, trở thành đối tác tin cậy trong lĩnh vực sản xuất và cung cấp vật liệu xây dựng (VLXD).</p>
+            <p>Chúng tôi cam kết mang đến những sản phẩm VLXD chất lượng vượt trội, với mức giá cạnh tranh nhất và phương thức vận chuyển tối ưu. Sự trưởng thành nhanh chóng của Phú Tân trong vài năm qua là minh chứng cho sự tín nhiệm mà khách hàng đã dành cho chúng tôi.</p>
+            <p>Với phương châm "Uy tín, Chất lượng, Tiện lợi, Hiệu quả", Phú Tân luôn đồng hành cùng các chủ đầu tư, thực hiện công tác giám sát chất lượng sản phẩm chặt chẽ. Chúng tôi không ngừng tư vấn và quản lý nguồn VLXD, đảm bảo chất lượng, an toàn, hiệu quả và đúng tiến độ. Tất cả nhằm mang lại lợi ích tối ưu cho khách hàng và đóng góp tích cực cho xã hội, xứng đáng với mọi niềm tin và kỳ vọng.</p>
+                      
         </section>
       </div>
     </>
