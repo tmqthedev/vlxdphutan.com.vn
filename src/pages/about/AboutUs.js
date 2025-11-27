@@ -1,4 +1,5 @@
 import React from 'react';
+import contactInfo from '../../data/contactInfo.json';
 import '../../styles/About.css';
 
 const AboutUs = () => {
@@ -12,7 +13,7 @@ const AboutUs = () => {
         <section>
           <h2>Giới Thiệu Công Ty</h2>
           <p>
-            Công ty Vật Liệu Xây Dựng Phú Tân được thành lập với mục đích cung cấp các dịch vụ 
+            {contactInfo.companyName} được thành lập với mục đích cung cấp các dịch vụ 
             chất lượng cao trong lĩnh vực tháo dỡ, chuyển nhà, mua bán nội thất và kính cường lực.
           </p>
         </section>
@@ -20,12 +21,12 @@ const AboutUs = () => {
         <section>
           <h2>Thông Tin Công Ty</h2>
           <ul>
-            <li><strong>Tên công ty:</strong> Công Ty TNHH Tư Vấn Thương mại Dịch vụ Phú Tân</li>
-            <li><strong>Mã số thuế:</strong> 370 297 4425</li>
-            <li><strong>Địa chỉ:</strong> Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh, Việt Nam.</li>
-            <li><strong>Người đại diện:</strong> Ông Hoàng Minh Phương</li>
-            <li><strong>Chức vụ:</strong> Giám Đốc</li>
-            <li><strong>Hotline:</strong> 0937 685 069</li>
+            <li><strong>Tên công ty:</strong> {contactInfo.companyName}</li>
+            <li><strong>Mã số thuế:</strong> {contactInfo.taxId}</li>
+            <li><strong>Địa chỉ:</strong> {contactInfo.address}</li>
+            <li><strong>Người đại diện:</strong> {contactInfo.representative}</li>
+            <li><strong>Chức vụ:</strong> {contactInfo.position}</li>
+            <li><strong>Hotline:</strong> {contactInfo.hotline}</li>
           </ul>
         </section>
 

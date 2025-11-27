@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Contact.css';
+import contactInfo from '../data/contactInfo.json';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -31,19 +32,19 @@ const Contact = () => {
           <h3>Thông Tin Liên Hệ</h3>
           <p>
             <strong>Địa chỉ:</strong><br />
-             Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh.
+             {contactInfo.address}
           </p>
           <p>
             <strong>Hotline:</strong><br />
-            0937 685 069
+            {contactInfo.hotline}
           </p>
           <p>
             <strong>Hotline Zalo:</strong><br />
-            0915 899 071
+            {contactInfo.hotlineZalo}
           </p>
           <p>
             <strong>Email:</strong><br />
-            thuongmaiphutan@gmail.com
+            {contactInfo.email}
           </p>
           <p>
             <strong>Giờ làm việc:</strong><br />

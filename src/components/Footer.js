@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import servicesData from '../data/servicesData.json';
+import contactInfo from '../data/contactInfo.json';
 import '../styles/Footer.css';
 
 const Footer = () => {
@@ -12,31 +13,31 @@ const Footer = () => {
           <div className="footer-contact">
             <div className="contact-item">
               <span className="contact-label">Địa chỉ: </span>
-              <span className="contact-value">Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh, Việt Nam.</span>
+              <span className="contact-value">{contactInfo.address}</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Hotline công ty: </span>
-              <span className="contact-value">0937 685 069</span>
+              <span className="contact-value">{contactInfo.hotline}</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Hotline Zalo: </span>
-              <span className="contact-value">0915 899 071</span>
+              <span className="contact-value">{contactInfo.hotlineZalo}</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Mã số thuế: </span>
-              <span className="contact-value">370 297 4425</span>
+              <span className="contact-value">{contactInfo.taxId}</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Tài khoản: </span>
-              <span className="contact-value">038 68 68 68 79 79 - Ngân hàng Cổ phần Quân đội MB Bank</span>
+              <span className="contact-value">{contactInfo.bankAccount} - {contactInfo.bankName}</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Người đại diện: </span>
-              <span className="contact-value">Hoàng Minh Phương - CEO</span>
+              <span className="contact-value">{contactInfo.representative} - {contactInfo.position}</span>
             </div>
             <div className="contact-item">
               <span className="contact-label">Email: </span>
-              <span className="contact-value">thuongmaiphutan@gmail.com</span>
+              <span className="contact-value">{contactInfo.email}</span>
             </div>
           </div>
         </div>
