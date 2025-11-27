@@ -33,14 +33,15 @@
       
     ],
     "gallery": [
-      "/assets/images/services/bespoke-interior/bespoke-interior_img.jpg"
+      "/assets/images/services/bespoke-interior/bespoke-interior_img1.jpg",
+      "/assets/images/services/bespoke-interior/bespoke-interior_img2.png"
     ]
   },
   
   "glazing-solutions": {
     "title": "Giải pháp Nhôm kính Thẩm mỹ & Hiện đại",
     "intro": "Cung cấp và thi công các hệ thống nhôm kính chất lượng cao, mang lại giải pháp ánh sáng tự nhiên, cách nhiệt tối ưu và nâng cao giá trị kiến trúc.",
-    "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=600&fit=crop",
+    "heroImage": "/assets/images/services/glazing-solutions/glazing-solutions_banner.png",
     "services": [
       "Hệ cửa/vách Nhôm kính: Sử dụng vật liệu hợp kim nhôm cao cấp (ví dụ: Xingfa, PMA, Việt Pháp,...) với công nghệ xử lý bề mặt hiện đại, đảm bảo độ cứng, chịu lực và chống ăn mòn.",
       "Kính chuyên dụng: Kính cường lực, kính dán an toàn, đáp ứng các tiêu chuẩn khắt khe về an toàn và tiết kiệm năng lượng.",
@@ -50,13 +51,14 @@
       
     ],
     "gallery": [
-      
+      "/assets/images/services/glazing-solutions/glazing-solutions_img1.png",
+      "/assets/images/services/glazing-solutions/glazing-solutions_img2.jpg"
     ]
   },
   "material-supply-contract": {
     "title": "Hợp đồng cung ứng Vật tư Công trình Trọn gói",
     "intro": "Giải pháp hợp đồng toàn diện nhằm đơn giản hóa quy trình mua sắm, tối ưu hóa nguồn lực và đảm bảo tiến độ dự án.",
-    "heroImage": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=600&fit=crop",
+    "heroImage": "/assets/images/services/material-supply-contract/material-supply-contract_banner.png",
     "services": [
       "Quản lý cung ứng tập trung: Chúng tôi chịu trách nhiệm cung cấp tất cả các loại vật tư từ thô đến hoàn thiện, bao gồm cả 3 hạng mục trên, với chất lượng đồng bộ và nguồn gốc rõ ràng.",
       "Tối ưu Chi phí & Thời gian: Khách hàng chỉ làm việc với một đối tác duy nhất, giảm thiểu rủi ro phát sinh, đơn giản hóa thủ tục thanh toán và tiết kiệm thời gian quản lý chuỗi cung ứng.",
@@ -66,9 +68,9 @@
       
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1578926078328-123c27246e5d?w=500&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1578926314433-b81a4e0b19c1?w=500&h=400&fit=crop"
+      "/assets/images/services/material-supply-contract/material-supply-contract_img1.png",
+      "/assets/images/services/material-supply-contract/material-supply-contract_img2.png",
+      "/assets/images/services/material-supply-contract/material-supply-contract_img3.png"
     ]
   }
 }

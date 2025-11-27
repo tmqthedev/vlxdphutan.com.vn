@@ -71,9 +71,6 @@ const Footer = () => {
           <span> - </span>
           <Link to="/">Sơ đồ trang web</Link>
         </div>
-        <div className="footer-copyright">
-          <p>©2024 Daiquangminhcorp. Bảo lưu mọi quyền. Được thiết kế bởi VIDOWEB</p>
-        </div>
       </div>
     </footer>
   );

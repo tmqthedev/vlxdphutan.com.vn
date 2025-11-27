@@ -13,25 +13,25 @@ const Home = () => {
       id: 1,
       title: 'Giải Pháp Gia Cố Nền Móng Chuyên Sâu',
       subtitle: 'Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.',
-      image: 'linear-gradient(135deg, #1e90ff 0%, #ff6b6b 100%)'
+      image: 'url(/assets/images/home/homepage_section1_banner_1.jpg)'
     },
     {
       id: 2,
       title: 'Thiết bị Nội thất & Thiết kế riêng',
       subtitle: 'Chúng tôi cung cấp sự kết hợp hoàn hảo giữa các sản phẩm nội thất thương hiệu hàng đầu và các giải pháp gia công tùy chỉnh theo yêu cầu, đáp ứng mọi yêu cầu về thẩm mỹ và công năng.',
-      image: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      image: 'url(/assets/images/home/homepage_section1_banner_2.png)'
     },
     {
       id: 3,
       title: 'Giải pháp Nhôm kính Thẩm mỹ & Hiện đại',
       subtitle: 'Cung cấp và thi công các hệ thống nhôm kính chất lượng cao, mang lại giải pháp ánh sáng tự nhiên, cách nhiệt tối ưu và nâng cao giá trị kiến trúc.',
-      image: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+      image: 'url(/assets/images/home/homepage_section1_banner_3.png)'
     },
     {
       id: 4,
       title: 'Hợp đồng cung ứng Vật tư Công trình Trọn gói',
       subtitle: 'Giải pháp hợp đồng toàn diện nhằm đơn giản hóa quy trình mua sắm, tối ưu hóa nguồn lực và đảm bảo tiến độ dự án.',
-      image: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+      image: 'url(/assets/images/home/homepage_section1_banner_4.jpg)'
     }
   ];
 
@@ -88,7 +88,7 @@ const Home = () => {
               <div 
                 key={slide.id} 
                 className="slide"
-                style={{ background: slide.image }}
+                style={{ backgroundImage: slide.image }}
               >
                 <div className="slide-content">
                   <h1>{slide.title}</h1>
@@ -149,7 +149,7 @@ const Home = () => {
           {/* Center Column - Image */}
           <div className="image-column">
             <img 
-              src="https://via.placeholder.com/400x500/cccccc/999999?text=Team+Photo" 
+              src="/assets/images/home/homepage_section2_img.jpg" 
               alt="Team"
               className="team-image"
             />
@@ -169,7 +169,8 @@ const Home = () => {
               <img src="/assets/images/home/signature.png" alt="CEO Signature" className="signature-image" />
               <p className="ceo-sign">Trân trọng,</p>
               <br></br><br></br><br></br>
-              <p className="ceo-title">CEO<p className="ceo-name"> Hoàng Minh Phương</p></p>
+              <p className="ceo-title">CEO</p>
+              <p className="ceo-name">Hoàng Minh Phương</p>
             </div>
           </div>
         </div>
