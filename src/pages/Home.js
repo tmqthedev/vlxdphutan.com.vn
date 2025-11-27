@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AnimateNumber from '../components/AnimateNumber';
 import LazyLoad from '../components/LazyLoad';
 import servicesData from '../data/servicesData.json';
+import contactInfo from '../data/contactInfo.json';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -169,8 +170,8 @@ const Home = () => {
               <img src="/assets/images/home/signature.png" alt="CEO Signature" className="signature-image" />
               <p className="ceo-sign">Trân trọng,</p>
               <br></br><br></br><br></br>
-              <p className="ceo-title">CEO</p>
-              <p className="ceo-name">Hoàng Minh Phương</p>
+              <p className="ceo-title">{contactInfo.position}</p>
+              <p className="ceo-name">{contactInfo.representative}</p>
             </div>
           </div>
         </div>
