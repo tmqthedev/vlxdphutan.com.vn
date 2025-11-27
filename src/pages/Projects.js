@@ -22,8 +22,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="projects-header">
-        <h1>Các Dự Án Đã Thực Hiện</h1>
-        <p>Những dự án tiêu biểu của Phú Tân Construction</p>
+        <h1>Những dự án tiêu biểu của Phú Tân Construction</h1>
       </div>
 
       <LazyLoad animation="slideUp">

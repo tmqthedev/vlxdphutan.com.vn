@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import useInView from '../hooks/useInView';
 
@@ -9,6 +9,9 @@ import useInView from '../hooks/useInView';
  * @param {string} props.className - CSS class
  * @param {string} props.animation - Animation type: 'fadeIn', 'slideUp', 'slideDown'
  * @param {number} props.delay - Delay animation (ms)
+ * @param {number} props.threshold - Threshold for visibility (0-1)
+ * @param {Function} props.onVisible - Callback khi element trở thành visible
+ * @param {string} props.tag - HTML tag (div, section, article, etc)
  */
 const LazyLoad = ({
   children,
@@ -16,14 +19,25 @@ const LazyLoad = ({
   animation = 'fadeIn',
   delay = 0,
   threshold = 0.1,
+  onVisible,
+  tag = 'div',
 }) => {
-  const { ref, isVisible } = useInView({ threshold });
+  const { ref, isVisible, hasBeenVisible } = useInView({ threshold });
 
-  const animationClass = isVisible ? `animated ${animation}` : '';
+  // Trigger callback when element becomes visible
+  useEffect(() => {
+    if (isVisible && onVisible) {
+      onVisible();
+    }
+  }, [isVisible, onVisible]);
+
+  const animationClass = hasBeenVisible ? `animated ${animation}` : '';
   const combinedClass = `lazy-load ${className} ${animationClass}`;
 
+  const Component = tag;
+
   return (
-    <div
+    <Component
       ref={ref}
       className={combinedClass}
       style={{
@@ -31,7 +45,7 @@ const LazyLoad = ({
       }}
     >
       {children}
-    </div>
+    </Component>
   );
 };
 
@@ -41,6 +55,8 @@ LazyLoad.propTypes = {
   animation: PropTypes.string,
   delay: PropTypes.number,
   threshold: PropTypes.number,
+  onVisible: PropTypes.func,
+  tag: PropTypes.string,
 };
 
 export default LazyLoad;

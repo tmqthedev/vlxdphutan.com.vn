@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="contact-map-wrapper">
             <iframe 
               title="Bản đồ địa chỉ công ty Phú Tân"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31329.81174146447!2d106.67922594404143!3d11.021628055098274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d05bedbdebc5%3A0x92f3dc2101aa7f19!2zUGjGsOG7nW5nIFBow7ogVMOibiwgVHAuIFRo4bunIERhuqd1IE3hu5l1LCBCw6xuaCBExrDGoW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1764034277104!5m2!1svi!2s" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8825739960866!2d106.68682687363366!3d11.047429889118266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d0266b1b23c1%3A0x6a4d74ac71b0e48!2zxJDGsOG7nW5nIE5CNSwgUGjDuiBN4bu5LCBUcC4gVGjhu6cgROG6p3UgTeG7mXQsIELDrG5oIETGsMahbmcsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1764221945519!5m2!1sen!2s"
               width="100%" 
               height="300" 
               style={{ border: 0 }} 
@@ -31,19 +31,19 @@ const Contact = () => {
           <h3>Thông Tin Liên Hệ</h3>
           <p>
             <strong>Địa chỉ:</strong><br />
-            22/4 Đường Lâm Văn Bền, KP4, Phường Tân Quy, Quận 7, TP HCM
+             Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh.
           </p>
           <p>
             <strong>Hotline:</strong><br />
-            0933 358 717 – 0909 583 236
+            0937 685 069
           </p>
           <p>
             <strong>Hotline Zalo:</strong><br />
-            0938 251 396
+            0915 899 071
           </p>
           <p>
             <strong>Email:</strong><br />
-            info@phutan.com.vn
+            thuongmaiphutan@gmail.com
           </p>
           <p>
             <strong>Giờ làm việc:</strong><br />
@@ -70,11 +70,10 @@ const Contact = () => {
             <label htmlFor="service">Dịch Vụ Cần</label>
             <select id="service" required>
               <option value="">-- Chọn dịch vụ --</option>
-              <option value="demolition">Tháo dỡ hoàn trả mặt bằng</option>
-              <option value="purchase">Thu mua phế liệu, vật tư kho bãi</option>
-              <option value="moving">Chuyển nhà, chuyển văn phòng</option>
-              <option value="furniture">Mua bán nội thất, kính cường lực</option>
-              <option value="installation">Thi công lắp đặt kính cường lực</option>
+              <option value="ground-solutions">Giải Pháp Gia Cố Nền Móng Chuyên Sâu</option>
+              <option value="bespoke-interior">Thiết bị Nội thất & Thiết kế riêng</option>
+              <option value="glazing-solutions">Giải pháp Nhôm kính Thẩm mỹ & Hiện đại</option>
+              <option value="material-supply-contract">Hợp đồng cung ứng Vật tư Công trình Trọn gói</option>
             </select>
           </div>
           <div className="form-group">

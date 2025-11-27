@@ -3,33 +3,28 @@ import FAQList from '../../components/FAQList';
 import faqData from '../../data/faqData.json';
 import '../../styles/About.css';
 
-const getCategoryLabel = (key) => {
-  const labels = {
-    'general': 'Chung',
-    'demolition': 'Tháo Dỡ',
-    'furniture': 'Nội Thất',
-    'installation': 'Lắp Đặt',
-    'moving': 'Chuyên Nhà',
-    'purchase': 'Thu Mua'
-  };
-  return labels[key] || key;
-};
-
 const FAQ = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  // Get all category keys from faqData
+  // Get category titles from metadata
+  const categoryTitles = faqData._categories || {};
+
+  // Get all category keys from faqData (excluding metadata)
   const categories = [
     { id: 'all', label: 'Tất Cả' },
-    ...Object.keys(faqData).map(key => ({
-      id: key,
-      label: getCategoryLabel(key)
-    }))
+    ...Object.keys(faqData)
+      .filter(key => key !== '_categories')
+      .map(key => ({
+        id: key,
+        label: categoryTitles[key] || key
+      }))
   ];
 
   // Get FAQs for selected category
   const faqs = selectedCategory === 'all' 
-    ? Object.values(faqData).flat()
+    ? Object.entries(faqData)
+        .filter(([key]) => key !== '_categories')
+        .flatMap(([, items]) => items)
     : faqData[selectedCategory] || [];
 
   return (

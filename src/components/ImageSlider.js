@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/ImageSlider.css';
 
 const ImageSlider = ({ images, title }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [loadedIndices, setLoadedIndices] = useState(new Set([0]));
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -19,7 +20,26 @@ const ImageSlider = ({ images, title }) => {
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
+    // Pre-load adjacent images
+    const adjacentIndices = new Set(loadedIndices);
+    adjacentIndices.add(index);
+    if (index > 0) adjacentIndices.add(index - 1);
+    if (index < images.length - 1) adjacentIndices.add(index + 1);
+    setLoadedIndices(adjacentIndices);
   };
+
+  const handleImageLoad = (index) => {
+    setLoadedIndices(prev => new Set(prev).add(index));
+  };
+
+  // Track preloaded images (current + adjacent)
+  useMemo(() => {
+    const indices = new Set(loadedIndices);
+    indices.add(currentIndex);
+    if (currentIndex > 0) indices.add(currentIndex - 1);
+    if (currentIndex < images.length - 1) indices.add(currentIndex + 1);
+    return indices;
+  }, [currentIndex, loadedIndices, images.length]);
 
   return (
     <div className="image-slider">
@@ -29,6 +49,8 @@ const ImageSlider = ({ images, title }) => {
           src={images[currentIndex]}
           alt={`${title} - ${currentIndex + 1}`}
           className="slider-image"
+          loading="lazy"
+          onLoad={() => handleImageLoad(currentIndex)}
         />
 
         {/* Navigation Buttons */}
@@ -36,6 +58,7 @@ const ImageSlider = ({ images, title }) => {
           className="slider-button prev"
           onClick={goToPrevious}
           aria-label="Previous image"
+          type="button"
         >
           ❮
         </button>
@@ -43,6 +66,7 @@ const ImageSlider = ({ images, title }) => {
           className="slider-button next"
           onClick={goToNext}
           aria-label="Next image"
+          type="button"
         >
           ❯
         </button>
@@ -56,7 +80,7 @@ const ImageSlider = ({ images, title }) => {
         <div className="slider-thumbnails">
           {images.map((image, index) => (
             <button
-              key={`thumb-${index}`}
+              key={image}
               className={`thumbnail ${index === currentIndex ? 'active' : ''}`}
               onClick={() => goToSlide(index)}
               aria-label={`View image ${index + 1}`}
@@ -66,6 +90,8 @@ const ImageSlider = ({ images, title }) => {
                 src={image}
                 alt={`Thumbnail ${index + 1}`}
                 className="thumbnail-image"
+                loading="lazy"
+                onLoad={() => handleImageLoad(index)}
               />
             </button>
           ))}
