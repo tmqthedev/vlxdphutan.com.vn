@@ -148,6 +148,8 @@
   background: #f9fafb;
   color: var(--primary-color);
   transition: var(--transition);
+  min-height: 44px;
+  box-sizing: border-box;
 }
 
 .form-group input::placeholder,
@@ -184,6 +186,7 @@
   transition: var(--transition);
   text-transform: uppercase;
   margin-top: 15px;
+  min-height: 44px;
 }
 
 .submit-button:hover {
@@ -261,9 +264,9 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .contact {
-    padding: 30px 15px;
+    padding: 35px 12px;
   }
 
   .contact-header {
@@ -272,11 +275,14 @@
 
   .contact-header h1 {
     font-size: 1.5rem;
-    letter-spacing: 0;
   }
 
   .contact-header p {
     font-size: 0.95rem;
+  }
+
+  .contact-container {
+    gap: 25px;
   }
 
   .contact-info {
@@ -290,7 +296,7 @@
   }
 
   .contact-info h3 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .contact-map-wrapper {
@@ -298,7 +304,7 @@
   }
 
   .contact-map-wrapper iframe {
-    height: 220px;
+    height: 230px;
   }
 
   .contact-form h2 {
@@ -308,13 +314,71 @@
   .form-group input,
   .form-group textarea,
   .form-group select {
-    padding: 12px;
+    padding: 11px 12px;
+    font-size: 16px;
+  }
+
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 25px 10px;
+  }
+
+  .contact-header {
+    margin-bottom: 25px;
+  }
+
+  .contact-header h1 {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+  }
+
+  .contact-header p {
+    font-size: 0.88rem;
+  }
+
+  .contact-info {
+    padding: 15px;
+    order: 2;
+  }
+
+  .contact-form {
+    padding: 15px;
+    order: 1;
+  }
+
+  .contact-info h3 {
+    font-size: 1rem;
+  }
+
+  .contact-map-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .contact-map-wrapper iframe {
+    height: 180px;
+  }
+
+  .contact-form h2 {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 10px 12px;
     border-radius: 4px;
+    font-size: 16px;
   }
 
   .submit-button {
     width: 100%;
-    padding: 12px 20px;
-    font-size: 0.9rem;
+    padding: 11px 16px;
+    font-size: 0.85rem;
   }
 }

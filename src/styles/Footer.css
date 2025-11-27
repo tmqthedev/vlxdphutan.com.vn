@@ -110,6 +110,13 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
@@ -125,5 +132,24 @@
 
   .footer-links span {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px 12px;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-contact p,
+  .contact-item,
+  .footer-section ul a {
+    font-size: 0.9rem;
   }
 }

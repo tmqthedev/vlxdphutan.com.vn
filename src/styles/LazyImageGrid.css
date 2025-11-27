@@ -114,8 +114,8 @@
   right: 15px;
   background: rgba(255, 255, 255, 0.9);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
@@ -124,6 +124,8 @@
   justify-content: center;
   transition: all 0.3s ease;
   z-index: 10;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .lightbox-close:hover {
@@ -132,6 +134,20 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .lightbox {
+    padding: 15px;
+  }
+
+  .lightbox-close {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    top: 12px;
+    right: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .lightbox {
     padding: 10px;
@@ -140,6 +156,7 @@
   .lightbox-content {
     max-width: 95vw;
     max-height: 95vh;
+    border-radius: 6px;
   }
 
   .lightbox-image {
@@ -147,10 +164,44 @@
   }
 
   .lightbox-close {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
     font-size: 1.2rem;
     top: 10px;
     right: 10px;
+  }
+
+  .lightbox-caption {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .lightbox {
+    padding: 8px;
+  }
+
+  .lightbox-content {
+    max-width: 96vw;
+    max-height: 92vh;
+    border-radius: 4px;
+  }
+
+  .lightbox-image {
+    max-height: 88vh;
+  }
+
+  .lightbox-close {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    top: 8px;
+    right: 8px;
+  }
+
+  .lightbox-caption {
+    font-size: 0.85rem;
+    padding: 10px 12px;
   }
 }

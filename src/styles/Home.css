@@ -57,6 +57,7 @@
   width: 100%;
   height: 90vh;
   overflow: hidden;
+  min-height: 400px;
 }
 
 .slider-container {
@@ -95,6 +96,7 @@
   font-size: 2.5rem;
   margin-bottom: 15px;
   font-weight: bold;
+  line-height: 1.3;
 }
 
 .slide-content p {
@@ -112,13 +114,18 @@
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
   border: 2px solid white;
-  padding: 8px;
-  font-size: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
   z-index: 10;
   font-weight: bold;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-btn:hover {
@@ -141,21 +148,29 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 8px;
   z-index: 10;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
 }
 
 .indicator {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
   border: 2px solid white;
   border-radius: 50%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.3s;
   font-weight: bold;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .indicator:hover {
@@ -185,7 +200,7 @@
 /* About Stats Section - Section 2 */
 .about-stats {
   background-color: #f5f5f5;
-  padding: 80px 20px;
+  padding: 60px 20px;
   margin: 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -196,7 +211,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1.2fr;
-  gap: 60px;
+  gap: 40px;
   align-items: flex-start;
 }
 
@@ -216,6 +231,7 @@
   color: #ff6b6b;
   margin-bottom: 15px;
   line-height: 1;
+  word-wrap: break-word;
 }
 
 .stat-label {
@@ -224,6 +240,7 @@
   line-height: 1.6;
   font-weight: 500;
   max-width: 180px;
+  word-wrap: break-word;
 }
 
 .image-column {
@@ -336,7 +353,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 15px;
+  padding: 0 10px;
 }
 
 .service-item {
@@ -510,7 +528,8 @@
 .features {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  gap: 25px;
+  padding: 0 10px;
 }
 
 .feature {
@@ -555,6 +574,12 @@
 }
 
 @media (max-width: 1024px) {
+  .services-carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
   .about-stats-container {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -571,12 +596,12 @@
 
 @media (max-width: 768px) {
   .about-stats {
-    padding: 60px 20px;
+    padding: 50px 15px;
   }
 
   .about-stats-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 35px;
   }
 
   .stat-number {
@@ -585,6 +610,7 @@
 
   .stat-label {
     font-size: 0.9rem;
+    max-width: 100%;
   }
 
   .team-image {
@@ -602,7 +628,7 @@
   }
 
   .slide {
-    padding: 60px 20px;
+    padding: 50px 20px;
   }
 
   .slide-content h1 {
@@ -613,13 +639,8 @@
     font-size: 1rem;
   }
 
-  .cta-button {
-    padding: 12px 30px;
-    font-size: 1rem;
-  }
-
   .slider-btn {
-    padding: 10px 15px;
+    padding: 10px 12px;
     font-size: 0.9rem;
   }
 
@@ -632,9 +653,9 @@
   }
 
   .indicator {
-    width: 35px;
-    height: 35px;
-    font-size: 0.8rem;
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
   }
 
   .slide-counter {
@@ -645,24 +666,22 @@
 
   .services-preview h2,
   .why-us h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
   }
 
-  .services-grid {
-    gap: 20px;
-  }
-
-  .service-card {
-    padding: 20px;
+  .services-carousel {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .why-us {
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   .features {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px;
   }
 
   .feature {
@@ -682,19 +701,124 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 640px) {
+  .hero-slider {
+    height: 60vh;
+    min-height: 350px;
+  }
+
+  .slide {
+    padding: 40px 15px;
+  }
+
+  .slide-content {
+    max-width: 100%;
+  }
+
+  .slide-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .slide-content p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .slider-btn {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .prev-btn {
+    left: 8px;
+  }
+
+  .next-btn {
+    right: 8px;
+  }
+
+  .indicator {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+
+  .slide-counter {
+    top: 12px;
+    right: 12px;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .about-stats {
+    padding: 40px 15px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .services-preview {
+    padding: 40px 15px;
+    margin: 40px 0;
+  }
+
+  .services-preview h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+
+  .services-carousel {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .service-item {
+    height: auto;
+  }
+
+  .service-image {
+    height: 200px;
+  }
+
+  .why-us {
+    padding: 25px 15px;
+    margin: 30px 0 0 0;
+  }
+
+  .why-us h2 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
   .features {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .features {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 12px;
   }
 
   .feature {
-    padding: 15px;
+    padding: 12px;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+  }
+
+  .feature h4 {
+    font-size: 0.9rem;
+    margin: 10px 0 8px 0;
+  }
+
+  .feature p {
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
 }
+
+
