@@ -20,7 +20,7 @@ const AboutUs = () => {
         <section>
           <h2>Thông Tin Công Ty</h2>
           <ul>
-            <li><strong>Tên công ty:</strong> Công Ty TNHH Vật Liệu Xây Dựng Phú Tân</li>
+            <li><strong>Tên công ty:</strong> Công Ty TNHH Tư Vấn Thương mại Dịch vụ Phú Tân</li>
             <li><strong>Mã số thuế:</strong> 370 297 4425</li>
             <li><strong>Địa chỉ:</strong> Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh, Việt Nam.</li>
             <li><strong>Người đại diện:</strong> Ông Hoàng Minh Phương</li>
