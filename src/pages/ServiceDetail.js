@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ImageSlider from '../components/ImageSlider';
+import { Link } from 'react-router-dom';
 import FAQList from '../components/FAQList';
 import LazyLoad from '../components/LazyLoad';
 import servicesData from '../data/servicesData.json';
@@ -20,8 +20,7 @@ const ServiceDetail = ({ serviceId = 'ground-solutions' }) => {
   const categories = [
     { id: 'ground-solutions', label: 'Giải Pháp Gia Cố Nền Móng Chuyên Sâu' },
     { id: 'bespoke-interior', label: 'Thiết bị Nội thất & Thiết kế riêng' },
-    { id: 'glazing-solutions', label: 'Giải pháp Nhôm kính Thẩm mỹ & Hiện đại' },
-    { id: 'material-supply-contract', label: 'Hợp đồng cung ứng Vật tư Công trình Trọn gói' }
+    { id: 'loose-materials', label: 'Vật liệu rời' }
   ];
 
   return (
@@ -42,7 +41,7 @@ const ServiceDetail = ({ serviceId = 'ground-solutions' }) => {
         </div>
       </section>
 
-      {/* Category & Content Section */}
+      {/* Product Section */}
       <section className="service-main">
         <LazyLoad animation="slideUp">
           <div className="service-container">
@@ -62,40 +61,35 @@ const ServiceDetail = ({ serviceId = 'ground-solutions' }) => {
               </div>
             </aside>
 
-            {/* Right Content */}
+            {/* Right Content - Products Grid */}
             <main className="service-content">
               <h2>{serviceContent.title}</h2>
               <p className="intro-text">{serviceContent.intro}</p>
 
-              {serviceContent.services && (
-                <div className="content-section">
-                  <h3>Các Công Việc Cung Cấp</h3>
-                  <ul className="service-list">
-                    {serviceContent.services.map((service, idx) => (
-                      <li key={service}>
-                        <span className="icon">✓</span>
-                        {service}
-                      </li>
+              {serviceContent.products && serviceContent.products.length > 0 && (
+                <div className="products-section">
+                  <div className="products-grid">
+                    {serviceContent.products.map((product) => (
+                      <div key={product.slug} className="product-card">
+                        <div className="product-image">
+                          <img src={product.image} alt={product.name} />
+                        </div>
+                        <div className="product-info">
+                          <p className="product-category">{serviceContent.title}</p>
+                          <h3 className="product-name">{product.name}</h3>
+                          <p className="product-detail">{product.detail}</p>
+                          <Link 
+                            to={`/product/${product.slug}`} 
+                            className="product-btn"
+                          >
+                            Xem Chi Tiết <span>➜</span>
+                          </Link>
+                        </div>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               )}
-
-              {/* Ưu Điểm Nổi Bật
-              {serviceContent.advantages && (
-                <div className="content-section">
-                  <h3>Ưu Điểm Nổi Bật</h3>
-                  <ul className="advantage-list">
-                    {serviceContent.advantages.map((adv, idx) => (
-                      <li key={adv}>
-                        <span className="icon">★</span>
-                        {adv}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              */}
             </main>
           </div>
         </LazyLoad>
@@ -107,20 +101,6 @@ const ServiceDetail = ({ serviceId = 'ground-solutions' }) => {
           <div className="faq-container">
             <h2>Các Câu Hỏi Thường Gặp</h2>
             <FAQList faqs={serviceFaqs} />
-          </div>
-        </section>
-      </LazyLoad>      
-      
-      {/* Gallery Section with ImageSlider */}
-      <LazyLoad animation="fadeIn" delay={200}>
-        <section className="gallery-section">
-          <div className="gallery-container">
-            <h2>Hình Ảnh Liên Quan</h2>
-            {serviceContent.gallery && serviceContent.gallery.length > 0 ? (
-              <ImageSlider images={serviceContent.gallery} title={serviceContent.title} />
-            ) : (
-              <p className="no-gallery">Không có hình ảnh để hiển thị</p>
-            )}
           </div>
         </section>
       </LazyLoad>

@@ -3,21 +3,37 @@
     "title": "Giải Pháp Gia Cố Nền Móng Chuyên Sâu",
     "intro": "Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.",
     "heroImage": "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=1200&h=600&fit=crop",
-    "services": [
-      "Cừ tràm: Được tuyển chọn kĩ càng, đủ kích thước, thông số ngọn gốc theo yêu cầu, đảm bảo khả năng chịu lực nén và ổn định nền móng trong môi trường ngập nước hoặc đất yếu.",
-      "Vải địa kỹ thuật: Cung cấp giải pháp phân cách, lọc, thoát nước và gia cường nền đất hiệu quả, kéo dài tuổi thọ công trình.",
-      "Giải pháp chống thấm & bảo vệ: Giấy dầu, màng chống thấm chuyên dụng, bao tải chất lượng cao phục vụ bảo vệ cấu kiện và thi công.",
-      "Rọ Đá: Giải pháp kè bờ, chống xói mòn và ổn định mái dốc linh hoạt, thân thiện với môi trường, mang lại tính thẩm mỹ và độ bền vượt trội.",
-      "Vật tư, phụ kiện khác: Lắng nghe mong muốn, đề xuất của Khách hàng cho những giải pháp riêng biệt, thích hợp nhiều loại địa hình."
-    ],
-    "advantages": [
-      
-    ],
-    "gallery": [
-      "/assets/images/services/ground-solutions/ground-solutions_img_1.png",
-      "/assets/images/services/ground-solutions/ground-solutions_img_2.png",
-      "/assets/images/services/ground-solutions/ground-solutions_img_3.png",
-      "/assets/images/services/ground-solutions/ground-solutions_img_4.png"
+    "products": [
+      {
+        "slug": "cu-tram",
+        "name": "Cừ tràm",
+        "detail": "Được tuyển chọn kĩ càng, đủ kích thước, thông số ngọn gốc theo yêu cầu, đảm bảo khả năng chịu lực nén và ổn định nền móng trong môi trường ngập nước hoặc đất yếu.",
+        "image": "/assets/images/services/ground-solutions/cu-tram.jpg"
+      },
+      {
+        "slug": "vai-dia-ky-thuat",
+        "name": "Vải địa kỹ thuật",
+        "detail": "Cung cấp giải pháp phân cách, lọc, thoát nước và gia cường nền đất hiệu quả, kéo dài tuổi thọ công trình.",
+        "image": "/assets/images/services/ground-solutions/vai-dia-ky-thuat.jpg"
+      },
+      {
+        "slug": "giai-phap-chong-tham",
+        "name": "Giải pháp chống thấm & bảo vệ",
+        "detail": "Giấy dầu, màng chống thấm chuyên dụng, bao tải chất lượng cao phục vụ bảo vệ cấu kiện và thi công.",
+        "image": "/assets/images/services/ground-solutions/chong-tham.jpg"
+      },
+      {
+        "slug": "ro-da",
+        "name": "Rọ Đá",
+        "detail": "Giải pháp kè bờ, chống xói mòn và ổn định mái dốc linh hoạt, thân thiện với môi trường, mang lại tính thẩm mỹ và độ bền vượt trội.",
+        "image": "/assets/images/services/ground-solutions/ro-da.jpg"
+      },
+      {
+        "slug": "vat-tu-phu-kien",
+        "name": "Vật tư, phụ kiện khác",
+        "detail": "Lắng nghe mong muốn, đề xuất của Khách hàng cho những giải pháp riêng biệt, thích hợp nhiều loại địa hình.",
+        "image": "/assets/images/services/ground-solutions/vat-tu-phu-kien.jpg"
+      }
     ]
   },
 
@@ -25,52 +41,51 @@
     "title": "Thiết bị Nội thất & Thiết kế riêng",
     "intro": "Chúng tôi cung cấp sự kết hợp hoàn hảo giữa các sản phẩm nội thất thương hiệu hàng đầu và các giải pháp gia công tùy chỉnh theo yêu cầu, đáp ứng mọi yêu cầu về thẩm mỹ và công năng.",
     "heroImage": "/assets/images/services/bespoke-interior/bespoke-interior_banner.jpg",
-    "services": [
-      "Nội thất Thương mại Cao cấp: Phân phối chính hãng các dòng sản phẩm từ các thương hiệu uy tín (như Hòa Phát, D Furni,... và các đối tác khác) với cam kết về chất lượng, thiết kế hiện đại và độ bền vượt trội.",
-      "Nội thất Gia công Thẩm mỹ: Dịch vụ thiết kế và thi công nội thất theo yêu cầu riêng, từ vật liệu, kích thước đến kiểu dáng, đảm bảo sự độc đáo, tối ưu không gian và phản ánh đúng phong cách cá nhân/thương hiệu của khách hàng."
-    ],
-    "advantages": [
-      
-    ],
-    "gallery": [
-      "/assets/images/services/bespoke-interior/bespoke-interior_img1.jpg",
-      "/assets/images/services/bespoke-interior/bespoke-interior_img2.png"
+    "products": [
+      {
+        "slug": "noi-that-thuong-mai",
+        "name": "Nội thất Thương mại Cao cấp",
+        "detail": "Phân phối chính hãng các dòng sản phẩm từ các thương hiệu uy tín (như Hòa Phát, D Furni,... và các đối tác khác) với cam kết về chất lượng, thiết kế hiện đại và độ bền vượt trội.",
+        "image": "/assets/images/services/bespoke-interior/bespoke-interior_img1.jpg"
+      },
+      {
+        "slug": "noi-that-gia-cong",
+        "name": "Nội thất Gia công Thẩm mỹ",
+        "detail": "Dịch vụ thiết kế và thi công nội thất theo yêu cầu riêng, từ vật liệu, kích thước đến kiểu dáng, đảm bảo sự độc đáo, tối ưu không gian và phản ánh đúng phong cách cá nhân/thương hiệu của khách hàng.",
+        "image": "/assets/images/services/bespoke-interior/bespoke-interior_img2.png"
+      }
     ]
   },
   
-  "glazing-solutions": {
-    "title": "Giải pháp Nhôm kính Thẩm mỹ & Hiện đại",
-    "intro": "Cung cấp và thi công các hệ thống nhôm kính chất lượng cao, mang lại giải pháp ánh sáng tự nhiên, cách nhiệt tối ưu và nâng cao giá trị kiến trúc.",
-    "heroImage": "/assets/images/services/glazing-solutions/glazing-solutions_banner.png",
-    "services": [
-      "Hệ cửa/vách Nhôm kính: Sử dụng vật liệu hợp kim nhôm cao cấp (ví dụ: Xingfa, PMA, Việt Pháp,...) với công nghệ xử lý bề mặt hiện đại, đảm bảo độ cứng, chịu lực và chống ăn mòn.",
-      "Kính chuyên dụng: Kính cường lực, kính dán an toàn, đáp ứng các tiêu chuẩn khắt khe về an toàn và tiết kiệm năng lượng.",
-      "Thi công tay nghề cao: Với đội ngũ kỹ thuật trình độ cao, đảm bảo độ kín khít tuyệt đối, vận hành êm ái và tính thẩm mỹ cao cho mặt dựng, cửa sổ, cửa đi các loại."
-    ],
-    "advantages": [
-      
-    ],
-    "gallery": [
-      "/assets/images/services/glazing-solutions/glazing-solutions_img1.png",
-      "/assets/images/services/glazing-solutions/glazing-solutions_img2.jpg"
-    ]
-  },
-  "material-supply-contract": {
-    "title": "Hợp đồng cung ứng Vật tư Công trình Trọn gói",
-    "intro": "Giải pháp hợp đồng toàn diện nhằm đơn giản hóa quy trình mua sắm, tối ưu hóa nguồn lực và đảm bảo tiến độ dự án.",
-    "heroImage": "/assets/images/services/material-supply-contract/material-supply-contract_banner.png",
-    "services": [
-      "Quản lý cung ứng tập trung: Chúng tôi chịu trách nhiệm cung cấp tất cả các loại vật tư từ thô đến hoàn thiện, bao gồm cả 3 hạng mục trên, với chất lượng đồng bộ và nguồn gốc rõ ràng.",
-      "Tối ưu Chi phí & Thời gian: Khách hàng chỉ làm việc với một đối tác duy nhất, giảm thiểu rủi ro phát sinh, đơn giản hóa thủ tục thanh toán và tiết kiệm thời gian quản lý chuỗi cung ứng.",
-      "Cam kết chất lượng đồng nhất: Đảm bảo vật tư đầy đủ giấy tờ, chứng từ được kiểm soát chất lượng nghiêm ngặt theo tiêu chuẩn Việt Nam."
-    ],
-    "advantages": [
-      
-    ],
-    "gallery": [
-      "/assets/images/services/material-supply-contract/material-supply-contract_img1.png",
-      "/assets/images/services/material-supply-contract/material-supply-contract_img2.png",
-      "/assets/images/services/material-supply-contract/material-supply-contract_img3.png"
+  "loose-materials": {
+    "title": "Vật liệu rời",
+    "intro": "Cung cấp các loại vật liệu rời chất lượng cao, phù hợp cho các công trình xây dựng đa dạng với giá cạnh tranh và dịch vụ giao hàng tin cậy.",
+    "heroImage": "/assets/images/services/loose-materials/loose-materials_banner.png",
+    "products": [
+      {
+        "slug": "cat-xay-dung",
+        "name": "Cát xây dựng",
+        "detail": "Cát xây dựng chất lượng cao, được sàng lọc kỹ càng, đáp ứng tiêu chuẩn TCVN, phù hợp cho các công trình xây dựng dân dụng và công nghiệp.",
+        "image": "/assets/images/services/loose-materials/cat-xay-dung.jpg"
+      },
+      {
+        "slug": "da-mi",
+        "name": "Đá mì",
+        "detail": "Đá mì sạch, kích thước đồng nhất, được sử dụng cho bê tông, nền đường, và các ứng dụng xây dựng khác.",
+        "image": "/assets/images/services/loose-materials/da-mi.jpg"
+      },
+      {
+        "slug": "da-tram-trang",
+        "name": "Đá trấu trắng",
+        "detail": "Đá trấu trắng chuyên dụng cho làm sạch nền, chống ẩm và các ứng dụng trang trí trong xây dựng.",
+        "image": "/assets/images/services/loose-materials/da-tram-trang.jpg"
+      },
+      {
+        "slug": "san-xi-mang",
+        "name": "Sàn xi măng",
+        "detail": "Bê tông và xi măng chất lượng cao từ các nhà cung cấp uy tín, đảm bảo độ bền và hiệu suất tối ưu.",
+        "image": "/assets/images/services/loose-materials/san-xi-mang.jpg"
+      }
     ]
   }
 }

@@ -167,11 +167,9 @@ const Home = () => {
             <p>Với phương châm "Uy tín, Chất lượng, Tiện lợi, Hiệu quả", Phú Tân luôn đồng hành cùng các chủ đầu tư, thực hiện công tác giám sát chất lượng sản phẩm chặt chẽ. Chúng tôi không ngừng tư vấn và quản lý nguồn VLXD, đảm bảo chất lượng, an toàn, hiệu quả và đúng tiến độ. Tất cả nhằm mang lại lợi ích tối ưu cho khách hàng và đóng góp tích cực cho xã hội, xứng đáng với mọi niềm tin và kỳ vọng mà quý vị đã gửi gắm.</p>
 
             <div className="ceo-signature">
-              <img src="/assets/images/home/signature.png" alt="CEO Signature" className="signature-image" />
               <p className="ceo-sign">Trân trọng,</p>
-              <br></br><br></br><br></br>
-              <p className="ceo-title">{contactInfo.position}</p>
               <p className="ceo-name">{contactInfo.representative}</p>
+              <p className="ceo-title">{contactInfo.position}</p>              
             </div>
           </div>
         </div>
