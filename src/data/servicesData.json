@@ -1,6 +1,6 @@
 {
   "ground-solutions": {
-    "title": "Giải Pháp Gia Cố Nền Móng Chuyên Sâu",
+    "title": "Vật Liệu Nền Móng Chuyên Sâu",
     "intro": "Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.",
     "heroImage": "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=1200&h=600&fit=crop",
     "products": [
@@ -8,31 +8,89 @@
         "slug": "cu-tram",
         "name": "Cừ tràm",
         "detail": "Được tuyển chọn kĩ càng, đủ kích thước, thông số ngọn gốc theo yêu cầu, đảm bảo khả năng chịu lực nén và ổn định nền móng trong môi trường ngập nước hoặc đất yếu.",
-        "image": "/assets/images/services/ground-solutions/cu-tram.jpg"
+        "image": "/assets/images/services/ground-solutions/cu-tram.webp"
       },
       {
         "slug": "vai-dia-ky-thuat",
         "name": "Vải địa kỹ thuật",
         "detail": "Cung cấp giải pháp phân cách, lọc, thoát nước và gia cường nền đất hiệu quả, kéo dài tuổi thọ công trình.",
-        "image": "/assets/images/services/ground-solutions/vai-dia-ky-thuat.jpg"
-      },
-      {
-        "slug": "giai-phap-chong-tham",
-        "name": "Giải pháp chống thấm & bảo vệ",
-        "detail": "Giấy dầu, màng chống thấm chuyên dụng, bao tải chất lượng cao phục vụ bảo vệ cấu kiện và thi công.",
-        "image": "/assets/images/services/ground-solutions/chong-tham.jpg"
+        "image": "/assets/images/services/ground-solutions/vai-dia-ky-thuat.png"
       },
       {
         "slug": "ro-da",
         "name": "Rọ Đá",
         "detail": "Giải pháp kè bờ, chống xói mòn và ổn định mái dốc linh hoạt, thân thiện với môi trường, mang lại tính thẩm mỹ và độ bền vượt trội.",
-        "image": "/assets/images/services/ground-solutions/ro-da.jpg"
+        "image": "/assets/images/services/ground-solutions/ro-da.png"
       },
       {
         "slug": "vat-tu-phu-kien",
         "name": "Vật tư, phụ kiện khác",
         "detail": "Lắng nghe mong muốn, đề xuất của Khách hàng cho những giải pháp riêng biệt, thích hợp nhiều loại địa hình.",
         "image": "/assets/images/services/ground-solutions/vat-tu-phu-kien.jpg"
+      }
+    ]
+  },
+  
+  "raw-materials": {
+    "title": "Vật liệu thô",
+    "intro": "Cung cấp các loại vật liệu thô chất lượng cao, phù hợp cho các công trình xây dựng đa dạng với giá cạnh tranh và dịch vụ giao hàng tin cậy.",
+    "heroImage": "/assets/images/services/raw-materials/raw-materials_banner.png",
+    "products": [
+      {
+        "slug": "cat-xay-dung",
+        "name": "Cát xây dựng",
+        "detail": "Cát xây dựng chất lượng cao, được sàng lọc kỹ càng, đáp ứng tiêu chuẩn TCVN, phù hợp cho các công trình xây dựng dân dụng và công nghiệp.",
+        "image": "/assets/images/services/raw-materials/cat-xay-dung.jpg"
+      },
+      {
+        "slug": "xi-mang",
+        "name": "Xi măng",
+        "detail": "Bê tông và xi măng chất lượng cao từ các nhà cung cấp uy tín, đảm bảo độ bền và hiệu suất tối ưu.",
+        "image": "/assets/images/services/raw-materials/xi-mang.jpg"
+      },
+      {
+        "slug": "da-xay-dung",
+        "name": "Đá xây dựng",
+        "detail": "Đá xây dựng sạch, kích thước đồng nhất, được sử dụng cho bê tông, nền đường, và các ứng dụng xây dựng khác.",
+        "image": "/assets/images/services/raw-materials/da-xay-dung.jpg"
+      },
+      {
+        "slug": "vat-lieu-theo-yeu-cau",
+        "name": "Vật liệu theo yêu cầu",
+        "detail": "Cung cấp các loại vật liệu theo yêu cầu đặc biệt của khách hàng, đáp ứng đa dạng nhu cầu xây dựng và thiết kế.",
+        "image": "/assets/images/services/raw-materials/vat-lieu-theo-yeu-cau.jpg"
+      }      
+    ]
+  },
+
+  "aluminum-glass-materials": {
+    "title": "Vật liệu nhôm kính",
+    "intro": "Cung cấp các vật liệu nhôm kính chất lượng cao, bao gồm cửa nhôm, bản lề, kính cường lực và các khung nhôm, phù hợp cho các công trình xây dựng và nội thất.",
+    "heroImage": "/assets/images/services/aluminum-glass-materials/aluminum-glass-materials_banner.png",
+    "products": [
+      {
+        "slug": "cua-nhom",
+        "name": "Cửa nhôm",
+        "detail": "Cửa nhôm chất lượng cao, thiết kế hiện đại, đảm bảo độ bền, chống ăn mòn và tính thẩm mỹ cao.",
+        "image": "/assets/images/services/aluminum-glass-materials/cua-nhom.jpg"
+      },
+      {
+        "slug": "ban-le-nhom",
+        "name": "Bản lề nhôm",
+        "detail": "Bản lề nhôm cao cấp, chịu lực tốt, hoạt động mượt mà, phù hợp cho các loại cửa và tủ.",
+        "image": "/assets/images/services/aluminum-glass-materials/ban-le-nhom.jpg"
+      },
+      {
+        "slug": "kinh-cuong-luc",
+        "name": "Kính cường lực",
+        "detail": "Kính cường lực an toàn, độ sáng cao, chống bể vỡ, thích hợp cho các ứng dụng cửa sổ, vách ngăn và trang trí.",
+        "image": "/assets/images/services/aluminum-glass-materials/kinh-cuong-luc.jpg"
+      },
+      {
+        "slug": "khung-nhom",
+        "name": "Khung nhôm",
+        "detail": "Khung nhôm chất lượng cao, đa dạng thiết kế, độ cứng cao, thích hợp cho các công trình nội thất và xây dựng.",
+        "image": "/assets/images/services/aluminum-glass-materials/khung-nhom.jpg"
       }
     ]
   },
@@ -53,38 +111,6 @@
         "name": "Nội thất Gia công Thẩm mỹ",
         "detail": "Dịch vụ thiết kế và thi công nội thất theo yêu cầu riêng, từ vật liệu, kích thước đến kiểu dáng, đảm bảo sự độc đáo, tối ưu không gian và phản ánh đúng phong cách cá nhân/thương hiệu của khách hàng.",
         "image": "/assets/images/services/bespoke-interior/bespoke-interior_img2.png"
-      }
-    ]
-  },
-  
-  "loose-materials": {
-    "title": "Vật liệu rời",
-    "intro": "Cung cấp các loại vật liệu rời chất lượng cao, phù hợp cho các công trình xây dựng đa dạng với giá cạnh tranh và dịch vụ giao hàng tin cậy.",
-    "heroImage": "/assets/images/services/loose-materials/loose-materials_banner.png",
-    "products": [
-      {
-        "slug": "cat-xay-dung",
-        "name": "Cát xây dựng",
-        "detail": "Cát xây dựng chất lượng cao, được sàng lọc kỹ càng, đáp ứng tiêu chuẩn TCVN, phù hợp cho các công trình xây dựng dân dụng và công nghiệp.",
-        "image": "/assets/images/services/loose-materials/cat-xay-dung.jpg"
-      },
-      {
-        "slug": "da-mi",
-        "name": "Đá mì",
-        "detail": "Đá mì sạch, kích thước đồng nhất, được sử dụng cho bê tông, nền đường, và các ứng dụng xây dựng khác.",
-        "image": "/assets/images/services/loose-materials/da-mi.jpg"
-      },
-      {
-        "slug": "da-tram-trang",
-        "name": "Đá trấu trắng",
-        "detail": "Đá trấu trắng chuyên dụng cho làm sạch nền, chống ẩm và các ứng dụng trang trí trong xây dựng.",
-        "image": "/assets/images/services/loose-materials/da-tram-trang.jpg"
-      },
-      {
-        "slug": "san-xi-mang",
-        "name": "Sàn xi măng",
-        "detail": "Bê tông và xi măng chất lượng cao từ các nhà cung cấp uy tín, đảm bảo độ bền và hiệu suất tối ưu.",
-        "image": "/assets/images/services/loose-materials/san-xi-mang.jpg"
       }
     ]
   }

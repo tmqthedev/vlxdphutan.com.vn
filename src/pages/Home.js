@@ -150,7 +150,8 @@ const Home = () => {
           {/* Center Column - Image */}
           <div className="image-column">
             <img 
-              src="/assets/images/home/homepage_section2_img.jpg" 
+              src="/assets/images/home/homepage_section2_img.jpg"
+              loading='lazy'
               alt="Team"
               className="team-image"
             />
@@ -183,7 +184,7 @@ const Home = () => {
             {getVisibleServices().map((service) => (
               <div key={service.id} className="service-item">
                 <div className="service-image">
-                  <img src={service.image} alt={service.title} />
+                  <img src={service.image} loading='lazy' alt={service.title} />
                 </div>
                 <div className="service-info">
                   <span className="service-label">{service.label}</span>

@@ -4,6 +4,8 @@
     "ground-solutions": "Giải Pháp Gia Cố Nền Móng Chuyên Sâu",
     "bespoke-interior": "Thiết bị Nội thất & Thiết kế riêng",
     "glazing-solutions": "Giải pháp Nhôm kính Thẩm mỹ & Hiện đại",
+    "raw-materials": "Vật liệu thô",
+    "aluminum-glass-materials": "Vật liệu nhôm kính",
     "material-supply-contract": "Hợp đồng cung ứng Vật tư Công trình Trọn gói"
   },
   "general": [
@@ -122,6 +124,52 @@
       "question": "Tất cả vật tư có bảo hành không?",
       "answer": "Có, tất cả vật tư được cung cấp với đầy đủ giấy tờ, chứng từ, và được kiểm soát chất lượng nghiêm ngặt theo tiêu chuẩn Việt Nam. Bảo hành theo từng loại sản phẩm.",
       "category": "material-supply-contract"
+    }
+  ],
+  "raw-materials": [
+    {
+      "id": 19,
+      "question": "Cát xây dựng có đáp ứng tiêu chuẩn TCVN không?",
+      "answer": "Có, cát xây dựng của chúng tôi được sàng lọc kỹ càng và đáp ứng đầy đủ tiêu chuẩn TCVN, phù hợp cho các công trình xây dựng dân dụng và công nghiệp.",
+      "category": "raw-materials"
+    },
+    {
+      "id": 20,
+      "question": "Vật liệu thô được giao hàng như thế nào?",
+      "answer": "Chúng tôi cung cấp dịch vụ giao hàng tin cậy với giá cạnh tranh. Vật liệu được vận chuyển bằng xe chuyên dụng đảm bảo an toàn và chất lượng sản phẩm.",
+      "category": "raw-materials"
+    },
+    {
+      "id": 21,
+      "question": "Có thể đặt hàng vật liệu theo yêu cầu không?",
+      "answer": "Có, chúng tôi cung cấp các loại vật liệu theo yêu cầu đặc biệt của khách hàng, đáp ứng đa dạng nhu cầu xây dựng và thiết kế.",
+      "category": "raw-materials"
+    }
+  ],
+  "aluminum-glass-materials": [
+    {
+      "id": 22,
+      "question": "Cửa nhôm được sản xuất từ nhôm gì?",
+      "answer": "Cửa nhôm của chúng tôi được sản xuất từ hợp kim nhôm cao cấp, đảm bảo độ bền, chống ăn mòn, và thiết kế hiện đại.",
+      "category": "aluminum-glass-materials"
+    },
+    {
+      "id": 23,
+      "question": "Bản lề nhôm có thể chịu lực bao nhiêu?",
+      "answer": "Bản lề nhôm cao cấp của chúng tôi được thiết kế để chịu lực tốt, hoạt động mượt mà, thích hợp cho các loại cửa nặng và tủ có tần suất sử dụng cao.",
+      "category": "aluminum-glass-materials"
+    },
+    {
+      "id": 24,
+      "question": "Kính cường lực được bảo hành bao lâu?",
+      "answer": "Kính cường lực được bảo hành 3 năm từ ngày lắp đặt. Chúng tôi hỗ trợ sửa chữa, thay thế khi có sự cố trong thời gian bảo hành.",
+      "category": "aluminum-glass-materials"
+    },
+    {
+      "id": 25,
+      "question": "Khung nhôm có những kích thước nào?",
+      "answer": "Khung nhôm của chúng tôi có nhiều kích thước và thiết kế đa dạng, có thể tùy chỉnh theo yêu cầu của công trình.",
+      "category": "aluminum-glass-materials"
     }
   ]
 }

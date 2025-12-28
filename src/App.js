@@ -18,6 +18,7 @@ const ProductDetail = lazy(() => import('./pages/ProductDetail'));
 const GroundSolutions = lazy(() => import('./pages/services/GroundSolutions'));
 const BespokeInterior = lazy(() => import('./pages/services/BespokeInterior'));
 const LooseMaterials = lazy(() => import('./pages/services/LooseMaterials'));
+const AluminumGlassMaterials = lazy(() => import('./pages/services/AluminumGlassMaterials'));
 
 // Lazy load about pages
 const AboutUs = lazy(() => import('./pages/about/AboutUs'));
@@ -57,7 +58,8 @@ function AppContent() {
             {/* Services routes */}
             <Route path="/services/ground-solutions" element={<GroundSolutions />} />
             <Route path="/services/bespoke-interior" element={<BespokeInterior />} />
-            <Route path="/services/loose-materials" element={<LooseMaterials />} />
+            <Route path="/services/raw-materials" element={<LooseMaterials />} />
+            <Route path="/services/aluminum-glass-materials" element={<AluminumGlassMaterials />} />
 
             {/* About routes */}
             <Route path="/about/us" element={<AboutUs />} />

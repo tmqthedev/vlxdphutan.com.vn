@@ -2,7 +2,7 @@ import React from 'react';
 import ServiceDetail from '../ServiceDetail';
 
 const LooseMaterials = () => {
-  return <ServiceDetail serviceId="loose-materials" />;
+  return <ServiceDetail serviceId="raw-materials" />;
 };
 
 export default LooseMaterials;

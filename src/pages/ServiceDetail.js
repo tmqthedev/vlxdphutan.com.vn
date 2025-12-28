@@ -17,11 +17,11 @@ const ServiceDetail = ({ serviceId = 'ground-solutions' }) => {
   // Get service-specific FAQs only
   const serviceFaqs = faqData[serviceId] || [];
 
-  const categories = [
-    { id: 'ground-solutions', label: 'Giải Pháp Gia Cố Nền Móng Chuyên Sâu' },
-    { id: 'bespoke-interior', label: 'Thiết bị Nội thất & Thiết kế riêng' },
-    { id: 'loose-materials', label: 'Vật liệu rời' }
-  ];
+  // Generate categories dynamically from servicesData
+  const categories = Object.keys(servicesData).map(key => ({
+    id: key,
+    label: servicesData[key].title
+  }));
 
   return (
     <div className="service-page">
