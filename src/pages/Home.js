@@ -14,32 +14,26 @@ const Home = () => {
       id: 1,
       title: 'Giải Pháp Gia Cố Nền Móng Chuyên Sâu',
       subtitle: 'Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.',
-      image: 'url(/assets/images/home/homepage_section1_banner_1.jpg)'
+      image: 'url(/assets/images/home/homepage_section1_banner_4.jpg)'
     },
     {
       id: 2,
       title: 'Thiết bị Nội thất & Thiết kế riêng',
       subtitle: 'Chúng tôi cung cấp sự kết hợp hoàn hảo giữa các sản phẩm nội thất thương hiệu hàng đầu và các giải pháp gia công tùy chỉnh theo yêu cầu, đáp ứng mọi yêu cầu về thẩm mỹ và công năng.',
-      image: 'url(/assets/images/home/homepage_section1_banner_2.png)'
+      image: 'url(/assets/images/home/homepage_section1_banner_3.png)'
     },
     {
       id: 3,
       title: 'Giải pháp Nhôm kính Thẩm mỹ & Hiện đại',
       subtitle: 'Cung cấp và thi công các hệ thống nhôm kính chất lượng cao, mang lại giải pháp ánh sáng tự nhiên, cách nhiệt tối ưu và nâng cao giá trị kiến trúc.',
-      image: 'url(/assets/images/home/homepage_section1_banner_3.png)'
-    },
-    {
-      id: 4,
-      title: 'Hợp đồng cung ứng Vật tư Công trình Trọn gói',
-      subtitle: 'Giải pháp hợp đồng toàn diện nhằm đơn giản hóa quy trình mua sắm, tối ưu hóa nguồn lực và đảm bảo tiến độ dự án.',
-      image: 'url(/assets/images/home/homepage_section1_banner_4.jpg)'
+      image: 'url(/assets/images/home/homepage_section1_banner_1.jpg)'
     }
   ];
 
   // Convert services data object to array format for display
   const servicesArray = Object.keys(servicesData).map(key => ({
     id: key,
-    label: 'Dịch vụ',
+    label: 'Cung cấp',
     title: servicesData[key].title,
     description: servicesData[key].intro,
     image: servicesData[key].heroImage,
@@ -179,7 +173,7 @@ const Home = () => {
 
       <section className="services-preview">
         <LazyLoad animation="slideUp" delay={100}>
-          <h2>DỊCH VỤ CHÚNG TÔI CUNG CẤP</h2>
+          <h2>LĨNH VỰC HOẠT ĐỘNG</h2>
           <div className="services-carousel">
             {getVisibleServices().map((service) => (
               <div key={service.id} className="service-item">
