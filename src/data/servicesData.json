@@ -2,7 +2,7 @@
   "ground-solutions": {
     "title": "Vật Liệu Nền Móng Chuyên Sâu",
     "intro": "Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.",
-    "heroImage": "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=1200&h=600&fit=crop",
+    "heroImage": "/assets/images/services/ground-solutions/vat-tu-phu-kien.jpg",
     "products": [
       {
         "slug": "cu-tram",
@@ -34,7 +34,7 @@
   "raw-materials": {
     "title": "Vật liệu thô",
     "intro": "Cung cấp các loại vật liệu thô chất lượng cao, phù hợp cho các công trình xây dựng đa dạng với giá cạnh tranh và dịch vụ giao hàng tin cậy.",
-    "heroImage": "/assets/images/services/raw-materials/raw-materials_banner.png",
+    "heroImage": "/assets/images/services/raw-materials/vat-lieu-theo-yeu-cau.jpg",
     "products": [
       {
         "slug": "cat-xay-dung",
