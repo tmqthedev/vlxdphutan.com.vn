@@ -2,7 +2,7 @@
   "ground-solutions": {
     "title": "Vật Liệu Nền Móng Chuyên Sâu",
     "intro": "Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.",
-    "heroImage": "https://images.unsplash.com/photo-1590078519057-26aa50eb5b3f?w=1200&h=600&fit=crop",
+    "heroImage": "/assets/images/services/ground-solutions/cu-tram.webp",
     "products": [
       {
         "slug": "cu-tram",
@@ -26,7 +26,7 @@
         "slug": "vat-tu-phu-kien",
         "name": "Vật tư, phụ kiện khác",
         "detail": "Lắng nghe mong muốn, đề xuất của Khách hàng cho những giải pháp riêng biệt, thích hợp nhiều loại địa hình.",
-        "image": "/assets/images/services/ground-solutions/vat-tu-phu-kien.jpg"
+        "image": "/assets/images/services/bespoke-interior/bespoke-interior_banner.jpg"
       }
     ]
   },
@@ -34,7 +34,7 @@
   "raw-materials": {
     "title": "Vật liệu thô",
     "intro": "Cung cấp các loại vật liệu thô chất lượng cao, phù hợp cho các công trình xây dựng đa dạng với giá cạnh tranh và dịch vụ giao hàng tin cậy.",
-    "heroImage": "/assets/images/services/raw-materials/raw-materials_banner.png",
+    "heroImage": "/assets/images/services/raw-materials/da-xay-dung.jpg",
     "products": [
       {
         "slug": "cat-xay-dung",
@@ -58,7 +58,7 @@
         "slug": "vat-lieu-theo-yeu-cau",
         "name": "Vật liệu theo yêu cầu",
         "detail": "Cung cấp các loại vật liệu theo yêu cầu đặc biệt của khách hàng, đáp ứng đa dạng nhu cầu xây dựng và thiết kế.",
-        "image": "/assets/images/services/raw-materials/vat-lieu-theo-yeu-cau.jpg"
+        "image": "/assets/images/services/bespoke-interior/bespoke-interior_banner.jpg"
       }      
     ]
   },
@@ -66,7 +66,7 @@
   "aluminum-glass-materials": {
     "title": "Vật liệu nhôm kính",
     "intro": "Cung cấp các vật liệu nhôm kính chất lượng cao, bao gồm cửa nhôm, bản lề, kính cường lực và các khung nhôm, phù hợp cho các công trình xây dựng và nội thất.",
-    "heroImage": "/assets/images/services/aluminum-glass-materials/aluminum-glass-materials_banner.png",
+    "heroImage": "/assets/images/services/aluminum-glass-materials/cua-nhom.jpg",
     "products": [
       {
         "slug": "cua-nhom",
