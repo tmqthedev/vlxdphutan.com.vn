@@ -12,8 +12,8 @@ const Home = () => {
   const slides = [
     {
       id: 1,
-      title: 'Giải Pháp Gia Cố Nền Móng Chuyên Sâu',
-      subtitle: 'Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.',
+      title: 'Vật Liệu Xây Dựng Phú Tân',
+      subtitle: 'Địa chỉ: Số 35, đường NB5, khu 01, Phường Bình Dương, Thành phố Hồ Chí Minh, Việt Nam - Hotline công ty: 0937 685 069',
       image: 'url(/assets/images/home/homepage_section1_banner_4.jpg)'
     },
     {

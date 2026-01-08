@@ -2,13 +2,13 @@
   "ground-solutions": {
     "title": "Vật Liệu Nền Móng Chuyên Sâu",
     "intro": "Chúng tôi cung cấp các vật tư gia cố nền đất tiêu chuẩn, được lựa chọn kỹ lưỡng để đảm bảo độ bền vững và khả năng chịu tải tối ưu cho mọi công trình.",
-    "heroImage": "/assets/images/services/ground-solutions/cu-tram.webp",
+    "heroImage": "/assets/images/services/ground-solutions/vat-tu-phu-kien.jpg",
     "products": [
       {
         "slug": "cu-tram",
         "name": "Cừ tràm",
         "detail": "Được tuyển chọn kĩ càng, đủ kích thước, thông số ngọn gốc theo yêu cầu, đảm bảo khả năng chịu lực nén và ổn định nền móng trong môi trường ngập nước hoặc đất yếu.",
-        "image": "/assets/images/services/ground-solutions/cu-tram.webp"
+        "image": "/assets/images/services/ground-solutions/cu-tram.jpg"
       },
       {
         "slug": "vai-dia-ky-thuat",
@@ -26,7 +26,7 @@
         "slug": "vat-tu-phu-kien",
         "name": "Vật tư, phụ kiện khác",
         "detail": "Lắng nghe mong muốn, đề xuất của Khách hàng cho những giải pháp riêng biệt, thích hợp nhiều loại địa hình.",
-        "image": "/assets/images/services/bespoke-interior/bespoke-interior_banner.jpg"
+        "image": "/assets/images/services/ground-solutions/vat-tu-phu-kien.jpg"
       }
     ]
   },
@@ -34,7 +34,7 @@
   "raw-materials": {
     "title": "Vật liệu thô",
     "intro": "Cung cấp các loại vật liệu thô chất lượng cao, phù hợp cho các công trình xây dựng đa dạng với giá cạnh tranh và dịch vụ giao hàng tin cậy.",
-    "heroImage": "/assets/images/services/raw-materials/da-xay-dung.jpg",
+    "heroImage": "/assets/images/services/raw-materials/vat-tu-phu-kien.jpg",
     "products": [
       {
         "slug": "cat-xay-dung",
@@ -58,7 +58,7 @@
         "slug": "vat-lieu-theo-yeu-cau",
         "name": "Vật liệu theo yêu cầu",
         "detail": "Cung cấp các loại vật liệu theo yêu cầu đặc biệt của khách hàng, đáp ứng đa dạng nhu cầu xây dựng và thiết kế.",
-        "image": "/assets/images/services/bespoke-interior/bespoke-interior_banner.jpg"
+        "image": "/assets/images/services/raw-materials/vat-tu-phu-kien.jpg"
       }      
     ]
   },
@@ -98,7 +98,7 @@
   "bespoke-interior": {
     "title": "Thiết bị Nội thất & Thiết kế riêng",
     "intro": "Chúng tôi cung cấp sự kết hợp hoàn hảo giữa các sản phẩm nội thất thương hiệu hàng đầu và các giải pháp gia công tùy chỉnh theo yêu cầu, đáp ứng mọi yêu cầu về thẩm mỹ và công năng.",
-    "heroImage": "/assets/images/services/bespoke-interior/bespoke-interior_banner.jpg",
+    "heroImage": "/assets/images/services/bespoke-interior/bespoke-interior_banner_2.jpg",
     "products": [
       {
         "slug": "noi-that-thuong-mai",

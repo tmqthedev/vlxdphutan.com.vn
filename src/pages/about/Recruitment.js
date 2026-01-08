@@ -6,54 +6,7 @@ const Recruitment = () => {
   const navigate = useNavigate();
 
   const positions = [
-    {
-      id: 1,
-      title: 'Nhân Viên Tháo Dỡ',
-      location: 'TP HCM',
-      salary: 'Thỏa thuận',
-      type: 'Full Time',
-      requirements: [
-        'Có kinh nghiệm tháo dỡ',
-        'Khỏe mạnh, có kỹ năng an toàn lao động',
-        'Độc lập, có trách nhiệm'
-      ]
-    },
-    {
-      id: 2,
-      title: 'Nhân Viên Chuyên Nhà',
-      location: 'TP HCM',
-      salary: 'Thỏa thuận',
-      type: 'Full Time',
-      requirements: [
-        'Có kinh nghiệm chuyên nhà',
-        'Có thể làm ngoài giờ khi cần',
-        'Khả năng giao tiếp tốt'
-      ]
-    },
-    {
-      id: 3,
-      title: 'Nhân Viên Lắp Đặt Kính',
-      location: 'TP HCM',
-      salary: 'Thỏa thuận',
-      type: 'Full Time',
-      requirements: [
-        'Có chứng chỉ lắp đặt kính cường lực',
-        'Có kinh nghiệm tối thiểu 2 năm',
-        'Kỹ năng kỹ thuật tốt'
-      ]
-    },
-    {
-      id: 4,
-      title: 'Nhân Viên Kinh Doanh',
-      location: 'TP HCM',
-      salary: 'Thỏa thuận',
-      type: 'Full Time',
-      requirements: [
-        'Có kinh nghiệm kinh doanh B2B',
-        'Kỹ năng giao tiếp xuất sắc',
-        'Ngoại hình chuyên nghiệp'
-      ]
-    }
+    
   ];
 
   const handleApply = (positionId, positionTitle) => {

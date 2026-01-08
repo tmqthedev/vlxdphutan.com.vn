@@ -6,10 +6,10 @@
     "category": "Giải Pháp Gia Cố Nền Móng Chuyên Sâu",
     "type": "Công trình",
     "description": "Dự án cung cấp cừ tràm chất lượng cao cho công trình Phước Trường. Chúng tôi đảm bảo nguồn cừ tràm bền vững, đạt tiêu chuẩn kỹ thuật và được vận chuyển an toàn đến công trình. Đội ngũ kỹ thuật giám sát chặt chẽ quá trình thi công để đảm bảo hiệu quả và an toàn.",
-    "image": "/assets/images/services/ground-solutions/cu-tram.webp",
+    "image": "/assets/images/services/ground-solutions/cu-tram.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop"
+      "/assets/images/projects/phuoc-truong/hinh-anh-du-an-1.jpg",
+      "/assets/images/projects/phuoc-truong/hinh-anh-du-an-2.jpg"
     ]
   },
   {
@@ -33,11 +33,11 @@
     "category": "Thi công lắp đặt kính cường lực",
     "type": "Cao ốc văn phòng",
     "description": "Thi công xây lắp và cung cấp, lắp đặt thiết bị, bảo hiểm thuộc công trình \"Nhà làm việc kiêm kho - Chi nhánh Vĩnh Long\" theo hợp đồng trọn gói. Dự án bao gồm quản lý toàn bộ quy trình từ thiết kế, cung cấp vật tư đến thi công hoàn thiện, đảm bảo tiến độ và chất lượng công trình theo yêu cầu của khách hàng.",
-    "image": "/assets/images/home/homepage_section1_banner_2.png",
+    "image": "/assets/images/projects/vietinbank/hinh-anh-du-an-1.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1554995207-c18231b6ce48?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=600&fit=crop"
+      "/assets/images/projects/vietinbank/hinh-anh-du-an-3.jpg",
+      "/assets/images/projects/vietinbank/hinh-anh-du-an-2.jpg",
+      "/assets/images/projects/vietinbank/hinh-anh-du-an-1.jpg"
     ]
   }
 ]

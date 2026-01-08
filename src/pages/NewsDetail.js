@@ -76,7 +76,9 @@ const NewsDetail = () => {
 
               {/* Full Content */}
               <div className="article-content">
-                <p>{currentNews.content}</p>
+                {currentNews.content.split('\n').map((paragraph, index) => (
+                  paragraph.trim() && <p key={index}>{paragraph}</p>
+                ))}
               </div>
             </div>
           </article>

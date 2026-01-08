@@ -8,44 +8,6 @@
     "aluminum-glass-materials": "Vật liệu nhôm kính",
     "material-supply-contract": "Hợp đồng cung ứng Vật tư Công trình Trọn gói"
   },
-  "general": [
-    {
-      "id": 1,
-      "question": "Phú Tân có phục vụ ngoài TP HCM không?",
-      "answer": "Có, chúng tôi có thể phục vụ các khu vực lân cận TP HCM. Vui lòng liên hệ để tư vấn chi tiết.",
-      "category": "general"
-    },
-    {
-      "id": 2,
-      "question": "Chi phí dịch vụ được tính như thế nào?",
-      "answer": "Chi phí được tính dựa trên khối lượng công việc, khoảng cách vận chuyển và loại dịch vụ. Chúng tôi sẽ cung cấp báo giá chi tiết sau khi kiểm tra.",
-      "category": "general"
-    },
-    {
-      "id": 3,
-      "question": "Bảo hành sản phẩm như thế nào?",
-      "answer": "Tất cả sản phẩm nội thất và kính cường lực được bảo hành tối thiểu 1 năm. Thi công kính được bảo hành 3 năm.",
-      "category": "general"
-    },
-    {
-      "id": 4,
-      "question": "Thời gian cung cấp dịch vụ là bao lâu?",
-      "answer": "Thời gian phụ thuộc vào từng loại dịch vụ và quy mô dự án. Chúng tôi sẽ lên kế hoạch chi tiết với bạn sau khi thỏa thuận hợp đồng.",
-      "category": "general"
-    },
-    {
-      "id": 5,
-      "question": "Làm thế nào để thanh toán?",
-      "answer": "Chúng tôi chấp nhận thanh toán tiền mặt, chuyển khoản ngân hàng. Thanh toán được tiến hành sau khi hoàn tất công việc.",
-      "category": "general"
-    },
-    {
-      "id": 6,
-      "question": "Phú Tân có cung cấp dịch vụ tư vấn không?",
-      "answer": "Có, chúng tôi cung cấp dịch vụ tư vấn và lên kế hoạch cho dự án của bạn miễn phí. Liên hệ để được hỗ trợ.",
-      "category": "general"
-    }
-  ],
   "ground-solutions": [
     {
       "id": 7,
@@ -86,46 +48,6 @@
       "category": "bespoke-interior"
     }
   ],
-  "glazing-solutions": [
-    {
-      "id": 13,
-      "question": "Kính cường lực được bảo hành bao lâu?",
-      "answer": "Kính cường lực được bảo hành 3 năm từ ngày lắp đặt. Chúng tôi hỗ trợ sửa chữa, thay thế khi có sự cố trong thời gian bảo hành.",
-      "category": "glazing-solutions"
-    },
-    {
-      "id": 14,
-      "question": "Hệ nhôm kính nào được sử dụng?",
-      "answer": "Chúng tôi sử dụng vật liệu hợp kim nhôm cao cấp từ các nhà sản xuất uy tín như Xingfa, PMA, Việt Pháp, đảm bảo độ cứng, chịu lực và chống ăn mòn tối ưu.",
-      "category": "glazing-solutions"
-    },
-    {
-      "id": 15,
-      "question": "Lắp đặt nhôm kính mất bao lâu?",
-      "answer": "Lắp đặt thông thường từ 1-3 ngày tùy theo quy mô công trình. Đội ngũ kỹ thuật của chúng tôi đảm bảo độ kín khít tuyệt đối và tính thẩm mỹ cao.",
-      "category": "glazing-solutions"
-    }
-  ],
-  "material-supply-contract": [
-    {
-      "id": 16,
-      "question": "Hợp đồng cung ứng trọn gói bao gồm những gì?",
-      "answer": "Hợp đồng cung ứng trọn gói bao gồm cung cấp toàn bộ vật tư từ thô đến hoàn thiện: gia cố nền móng, nội thất, và nhôm kính, cùng với bảo hành và hỗ trợ sau bán hàng.",
-      "category": "material-supply-contract"
-    },
-    {
-      "id": 17,
-      "question": "Lợi ích của hợp đồng cung ứng trọn gói là gì?",
-      "answer": "Bạn chỉ cần làm việc với một đối tác duy nhất, giảm rủi ro phát sinh, đơn giản hóa thủ tục thanh toán, tiết kiệm thời gian quản lý chuỗi cung ứng và chi phí.",
-      "category": "material-supply-contract"
-    },
-    {
-      "id": 18,
-      "question": "Tất cả vật tư có bảo hành không?",
-      "answer": "Có, tất cả vật tư được cung cấp với đầy đủ giấy tờ, chứng từ, và được kiểm soát chất lượng nghiêm ngặt theo tiêu chuẩn Việt Nam. Bảo hành theo từng loại sản phẩm.",
-      "category": "material-supply-contract"
-    }
-  ],
   "raw-materials": [
     {
       "id": 19,
@@ -147,12 +69,6 @@
     }
   ],
   "aluminum-glass-materials": [
-    {
-      "id": 22,
-      "question": "Cửa nhôm được sản xuất từ nhôm gì?",
-      "answer": "Cửa nhôm của chúng tôi được sản xuất từ hợp kim nhôm cao cấp, đảm bảo độ bền, chống ăn mòn, và thiết kế hiện đại.",
-      "category": "aluminum-glass-materials"
-    },
     {
       "id": 23,
       "question": "Bản lề nhôm có thể chịu lực bao nhiêu?",
